@@ -1,0 +1,104 @@
+* {
+  margin: 30;
+  /* height: 0;
+  width: 0; */
+}
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th,
+caption {
+  border: 1px solid #000;
+}
+
+.animations-3d {
+  padding-left: 50px;
+  /* width: 500px; */
+}
+
+.animations-3d video {
+  width: 500px;
+}
+
+.text-2 {
+  width: 1000px;
+}
+
+.text-4 {
+  padding-left: 70px;
+  padding-right: 170px;
+}
+
+.logo-anim video {
+  width: 500px;
+  position: relative;
+  right: -60px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: #7fb6c7;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+.registration {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: #7fb6c7;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+  /* margin-left: auto; */
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.jakor {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: #a5df1d;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.animations-3d__cube {
+  width: 560;
+  height: 315;
+  src: url("https://www.youtube.com/embed/WojAKjpmpcA");
+}
+
+.bg-animations__one {
+  /* padding-right: 40px; */
+  margin-right: 40px;
+}
+
+.bg-animations__two {
+  
+}
+
+.bg-animations {
+  margin-left: 30px;
+  display:flex;
+  /* gap: 30px; */
+}
+
+.logo-anim__one {
+  margin-left: 30px;
+}
