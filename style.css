@@ -24,15 +24,6 @@ caption {
   width: 500px;
 }
 
-.text-2 {
-  width: 1000px;
-}
-
-.text-4 {
-  padding-left: 70px;
-  padding-right: 170px;
-}
-
 .logo-anim video {
   width: 500px;
   position: relative;
@@ -101,4 +92,12 @@ caption {
 
 .logo-anim__one {
   margin-left: 30px;
+}
+
+.text {
+  margin-left: 20px;
+}
+
+.text.one {
+  margin-left: 70px;
 }
