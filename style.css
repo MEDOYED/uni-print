@@ -7,6 +7,9 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-bottom: 4px;
 }
 
 .registration {
@@ -19,10 +22,10 @@
   border-radius: 6px;
   cursor: pointer;
   display: inline-flex;
-  margin-left: 600px;
-  /* margin-left: auto; */
-  margin-right: 10px;
-  margin-top: 0px;
+  /* margin-left: 700px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 29px;
 }
 
 .heading {
@@ -80,13 +83,14 @@ caption {
 
 .animations-3d {
   padding-left: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   /* width: 500px; */
 }
 
 .animations-3d__cube {
-  width: 560;
-  height: 315;
-  src: url("https://www.youtube.com/embed/WojAKjpmpcA");
+  width: 560px;
+  height: 315px;
 }
 
 .text-3 {
@@ -101,16 +105,22 @@ caption {
 .bg-animations {
   margin-left: 30px;
   display:flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
   /* gap: 30px; */
 }
 
 .bg-animations__one {
   /* padding-right: 40px; */
   margin-right: 40px;
+  width: 560px;
+  height: 315px;
 }
 
 .bg-animations__two {
   margin-right: 40px;
+  width: 560px;
+  height: 315px;
 }
 
 .text-4 {
@@ -122,14 +132,15 @@ caption {
   text-align: justify;
 }
 
-.logo-anim video {
+.logo-anim {
   width: 500px;
   position: relative;
-  right: -60px;
 }
 
 .logo-anim__one {
-  margin-left: 30px;
+  margin-left: 60px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .text-5 {
