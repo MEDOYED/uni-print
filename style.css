@@ -29,7 +29,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
   text-indent: 100px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -90,8 +90,12 @@ caption {
 }
 
 .text-3 {
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-left: 15px;
   margin-right: 20px;
+  text-align: justify;
+  font-size: 18px;
+  text-indent: 50px;
 }
 
 .bg-animations {
@@ -110,8 +114,11 @@ caption {
 }
 
 .text-4 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   margin-left: 15px;
   margin-right: 20px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .logo-anim video {
@@ -123,6 +130,8 @@ caption {
 .logo-anim__one {
   margin-left: 30px;
 }
+
+
 
 .line {
   height: 2px;
