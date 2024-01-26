@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: #a19f9f;
   /* margin-bottom: 30px; */
