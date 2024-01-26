@@ -9,10 +9,6 @@ html {
   padding-bottom: 9px;
 }
 
-/* .nav {
-  border: none;
-} */
-
 .jakor__button {
   display: inline-block;
   padding: 2px 10px;
@@ -55,6 +51,13 @@ html {
 .text-one {
   margin-left: 15px;
   margin-right: 20px;
+}
+
+.container {
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
 }
 
 .text-one__lorem1 {
@@ -102,9 +105,12 @@ caption {
   font-size: 20px;
 }
 
-.text-2 {
+.text-two {
   margin-left: 15px;
   margin-right: 20px;
+}
+
+.text-two__lorem2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 20px;
