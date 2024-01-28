@@ -10,7 +10,7 @@
 </head>
 <body>
   <form autocomplete="on" name="form1">
-    <fieldset>
+    <fieldset class="border">
       <div tabindex="">
         <label for="#name1">Введіть ім'я</label>
         <input id="name1" type="text" tabindex="1">
@@ -21,12 +21,12 @@
         </label>
       </div>
     </fieldset>
-    <fieldset>
+    <fieldset class="border">
       <label for="name3">Введіть почту</label>
       <input id="name3" type="text" tabindex="3">
     </fieldset>
 
-    <fieldset>
+    <fieldset class="border">
       <select name="month" id="" tabindex="4">
         <option value="">--Місяць не вибраний--</option>
         <option value="one">Січень</option>
@@ -104,18 +104,15 @@
       </select>
     </fieldset>
 
-    <fieldset>
-      <label for="password">Придумайте пароль</label>
-      <input id="password" type="text" tabindex="6">
+    <fieldset class="border">
+      <label class="box__think-password" for="password">Придумайте пароль</label>
+      <input class="box__password" id="password" type="text" tabindex="6">
     </fieldset>
-    <fieldset>
-      <button type="submit" tabindex="8"> Відправити данні </button>
-      <button type="reset" tabindex="7"> Стерти данні</button>
-      <a href="index.html" class="button-link" tabindex="9">Повернутись на головну сторінку</a>
+    <fieldset class="border">
+      <button class="border__submit" type="submit" tabindex="8"> Відправити данні </button>
+      <button class="border__reset" type="reset" tabindex="7"> Стерти данні</button>
+      <a href="index.html" class="border__button-link" tabindex="9">Повернутись на головну сторінку</a>
     </fieldset>
-    <div>
-      gg
-    </div>
   </form>
 </body>
 </html>
