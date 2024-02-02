@@ -27,7 +27,7 @@ body{
 }
 
 .border:hover{
-  box-shadow: -3px -4px 1px #494949;
+  scale: 1.03;
   background-position: 100% 0;
 }
 

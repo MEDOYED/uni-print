@@ -1,0 +1,39 @@
+body {
+  background-color: #333;
+}
+
+.wrapper {
+  height: 200px;
+  padding: 50px;
+}
+
+.container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border: 10px solid #555;
+  border-radius: 10px;
+  background-color: rgb(104, 103, 102);
+}
+
+.block {
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  background-color: aqua;
+}
+
+/* --------------------------------------------------------- */
+.block {
+  animation: move-block 3s infinite alternate;   
+
+}
+
+@keyframes move-block {
+  0% {
+    left: 0%;
+  }
+  100%{
+    left: calc(100% - 200px);
+  }
+}

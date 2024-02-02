@@ -25,6 +25,11 @@ html {
   margin-bottom: 4px;
 }
 
+.animation__button {
+  position: relative;
+  
+}
+
 .registration__button {
   position: relative;
   top: -1px;
