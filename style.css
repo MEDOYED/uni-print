@@ -28,6 +28,15 @@ html {
   margin-bottom: 4px;
 }
 
+
+
+.nav__item:hover {
+  background-color: #ff6262;
+  transition: .3s;
+}
+
+
+
 .header__buttons {
   position: absolute;
   right: 50px;
@@ -43,6 +52,10 @@ html {
   border: 2px solid #55b672;
   border-radius: 6px;
   margin-right: 14px;
+}
+
+.animation-button:visited {
+  background-color: rgb(250, 122, 192);
 }
 
 .registration-button {
