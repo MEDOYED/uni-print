@@ -216,6 +216,42 @@ caption {
   text-align: justify;
 }
 
+.psevdoclass {
+  padding: 50px 50px 60px;
+}
+
+.psevdoclass__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.psevdoclass__list {
+  font-size: 30px;
+}
+
+.psevdoclass__item {
+  display: flex;
+  justify-content: center;
+}
+
+.psevdoclass__item:nth-child(odd) {
+  color: #2eb113;
+}
+
+.psevdoclass__item:nth-child(even) {
+  color: #ff6262;
+} 
+
+.psevdoclass__item:nth-child(3n) {
+  color: #222faa;
+}   
+
+.psevdoclass__item:nth-child(4n) {
+  color: #86067c;
+}    
+
 .line {
   height: 2px;
   width: 100%;
