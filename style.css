@@ -14,7 +14,7 @@ html {
 
 }
 
-.jakor__button {
+.nav__item {
   display: inline-block;
   padding: 2px 10px;
   background-color: #a5df1d;
@@ -28,13 +28,12 @@ html {
   margin-bottom: 4px;
 }
 
-.user {
+.header__buttons {
   position: absolute;
   right: 50px;
-  /* top: 15px; */
 }
 
-.animation__button {
+.animation-button {
   position: relative;
   display: inline-block;
   padding: 2px 10px;
@@ -46,7 +45,7 @@ html {
   margin-right: 14px;
 }
 
-.registration__button {
+.registration-button {
   position: relative;
   display: inline-block;
   padding: 2px 10px;
