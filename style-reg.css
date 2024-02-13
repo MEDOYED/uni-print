@@ -122,3 +122,7 @@ body{
   background-color: #5dc7e7;
   border-radius: 8px;
 }
+
+:focus {
+  box-shadow: 0 0 10px #40c552;
+}
