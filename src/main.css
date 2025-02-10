@@ -1,3 +1,27 @@
+/* ===== global styles ===== */
+/* ===== global styles ===== */
+/* ===== global styles ===== */
+
+:root {
+  --background: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --background: #181818;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== global styles ===== */
+/* ===== global styles ===== */
+/* ===== global dstyles ===== */
+
 /* ====== reset css  ============= */
 /* ====== reset css  ============= */
 /* ====== reset css  ============= */
