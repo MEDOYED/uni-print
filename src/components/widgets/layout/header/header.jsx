@@ -1,3 +1,5 @@
+import { Instagram } from "lucide-react";
+
 import ToggleTheme from "../../../UI/togle-theme/toggle-theme";
 
 import logoIcon from "../../../../assets/img/logo.png";
@@ -16,7 +18,7 @@ const Header = () => {
           <span></span>
         </button>
 
-        <img className="header__instagram-icon" src="" alt="" />
+        <Instagram className="header__instagram-icon" />
       </header>
     </>
   );

@@ -1,8 +1,9 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   width: 100px;
+  height: 100vh;
 
   &__logo {
     max-width: 150px;
@@ -49,5 +50,13 @@
         top: 10px;
       }
     }
+  }
+
+  &__instagram-icon {
+    display: flex;
+
+    margin: auto auto 40px;
+    width: 25px;
+    height: 25px;
   }
 }
