@@ -1,7 +1,53 @@
-.dark-theme {
-  background-color: #000000;
-}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
 
-.light-theme {
-  background-color: #fff;
+  &__logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 24px;
+
+    span {
+      width: 30px;
+      height: 5px;
+      background-color: #000;
+      border-radius: 3px;
+      position: relative;
+      display: block;
+      transition: all 0.3s ease;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        background-color: #000;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        left: 0;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        top: 10px;
+      }
+    }
+  }
 }

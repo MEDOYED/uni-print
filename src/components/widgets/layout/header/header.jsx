@@ -1,18 +1,21 @@
-import ToggleTheme from "../../../UI/toggleTheme";
+import ToggleTheme from "../../../UI/toggle-theme";
 
 import logoIcon from "../../../../assets/img/logo.png";
-import toggleThemeIcon from "../../../../assets/img/toggle-theme.svg";
 
 import "./header.scss";
 
 const Header = () => {
   return (
     <>
-      <header className="bob">
-        <img src={logoIcon} alt="" />
+      <header className="header">
+        <img className="header__logo" src={logoIcon} alt="" />
 
         <ToggleTheme />
-        <div className="header__burger"></div>
+
+        <button className="header__burger" role="button">
+          <span></span>
+        </button>
+
         <img className="header__instagram-icon" src="" alt="" />
       </header>
     </>
