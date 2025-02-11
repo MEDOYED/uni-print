@@ -61,5 +61,30 @@
     margin: auto auto 40px;
     width: 25px;
     height: 25px;
+
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+
+    --s: 25px;
+    --b: 4px;
+    /* the border thickness*/
+    --g: 4px;
+    /* the gap */
+    --c: #727272;
+    /* the color */
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s) / 2) solid rgba(255, 255, 255, 0);
+    outline-offset: calc(var(--s) / -2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: outline 0.3s ease, outline-offset 0.3s ease;
+
+    &:hover {
+      outline: var(--b) solid var(--c);
+      outline-offset: var(--g);
+    }
   }
 }
