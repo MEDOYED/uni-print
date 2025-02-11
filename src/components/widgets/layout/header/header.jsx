@@ -1,4 +1,5 @@
 import { Instagram } from "lucide-react";
+import { useState } from "react";
 
 import ToggleTheme from "../../../UI/togle-theme/toggle-theme";
 
@@ -7,6 +8,12 @@ import logoIcon from "../../../../assets/img/logo.png";
 import "./header.scss";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleBurger = () => {
+    setIsOpen((isOpen) => (isOpen === false ? true : false));
+    // setIsOpen((prev) => !prev);  // more correct
+  };
   return (
     <>
       <header className="header">
@@ -14,7 +21,10 @@ const Header = () => {
 
         <ToggleTheme />
 
-        <button className="header__burger open" role="button">
+        <button
+          className={`header__burger  ${isOpen === true ? "open" : ""}`}
+          role="button"
+          onClick={toggleBurger}>
           {/* <span></span> */}
           <svg
             width="35"
