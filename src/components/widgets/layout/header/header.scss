@@ -15,11 +15,10 @@
     flex-direction: column;
     margin: 0 auto;
     justify-content: space-between;
-
     cursor: pointer;
     position: relative;
-    width: 30px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
 
     span {
       width: 30px;
@@ -49,6 +48,22 @@
       &::after {
         top: 10px;
       }
+    }
+  }
+
+  &__burger.open .header__burger-svg {
+    // transition: all 0.3s;
+
+    .top {
+      transform: translate(12px, -9px) rotate(45deg);
+    }
+
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      transform: translate(-9px, 4px) rotate(-45deg);
     }
   }
 
