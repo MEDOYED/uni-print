@@ -35,8 +35,8 @@ const Header = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             className="header__burger-svg">
-            <line className="top" x1="4" x2="20" y1="12" y2="12" />
-            <line className="middle" x1="4" x2="20" y1="6" y2="6" />
+            <line className="top" x1="4" x2="20" y1="6" y2="6" />
+            <line className="middle" x1="4" x2="20" y1="12" y2="12" />
             <line className="bottom" x1="4" x2="20" y1="18" y2="18" />
           </svg>
         </button>
