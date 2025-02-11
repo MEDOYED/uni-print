@@ -25,7 +25,6 @@ const Header = () => {
           className={`header__burger  ${isOpen === true ? "open" : ""}`}
           role="button"
           onClick={toggleBurger}>
-          {/* <span></span> */}
           <svg
             width="35"
             height="35"
@@ -35,7 +34,6 @@ const Header = () => {
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            // className="lucide lucide-menu">
             className="header__burger-svg">
             <line className="top" x1="4" x2="20" y1="12" y2="12" />
             <line className="middle" x1="4" x2="20" y1="6" y2="6" />
