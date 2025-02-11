@@ -1,4 +1,4 @@
-import useThemeStore from "../../store/themeStore";
+import useThemeStore from "../../../store/themeStore";
 import { Sun, Moon } from "lucide-react";
 
 import "./toggle-theme.css";

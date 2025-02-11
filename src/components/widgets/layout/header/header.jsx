@@ -1,4 +1,4 @@
-import ToggleTheme from "../../../UI/toggle-theme";
+import ToggleTheme from "../../../UI/togle-theme/toggle-theme";
 
 import logoIcon from "../../../../assets/img/logo.png";
 
