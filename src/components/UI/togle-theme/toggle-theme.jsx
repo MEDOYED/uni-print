@@ -13,8 +13,7 @@ const ToggleTheme = () => {
         onClick={toggleTheme}
         type="button"
         aria-label="Переключення теми">
-        {/* <img src={toggleThemeIcon} alt="" /> */}
-        {theme === "light" ? <Moon size={24} /> : <Sun size={24} />}
+        {theme === "light" ? <Moon size={30} /> : <Sun size={30} />}
       </button>
     </>
   );

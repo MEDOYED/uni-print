@@ -12,12 +12,13 @@
   &__burger {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: auto 38px auto auto;
     justify-content: space-between;
     cursor: pointer;
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    scale: 1.4;
   }
 
   &__burger .header__burger-svg {
@@ -58,15 +59,15 @@
   &__instagram-icon {
     display: flex;
 
-    margin: auto auto 40px;
-    width: 25px;
-    height: 25px;
+    margin: 0 auto 40px;
+    width: 30px;
+    height: 30px;
 
     border-radius: 8px;
     align-items: center;
     justify-content: center;
 
-    --s: 25px;
+    --s: 30px;
     --b: 4px;
     /* the border thickness*/
     --g: 4px;
