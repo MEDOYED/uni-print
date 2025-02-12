@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import useThemeStore from "../../store/themeStore";
 
 import Header from "../widgets/layout/header/header";
+import HomePage from "../pages/home-page/home-page";
 
 import "./app.css";
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <div className="container">
         <Header />
+        <HomePage />
       </div>
     </>
   );
