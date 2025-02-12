@@ -5,7 +5,7 @@ import useThemeStore from "../../store/themeStore";
 import Header from "../widgets/layout/header/header";
 import HomePage from "../pages/home-page/home-page";
 
-import "./app.css";
+import "./app.scss";
 
 function App() {
   const { theme } = useThemeStore();
