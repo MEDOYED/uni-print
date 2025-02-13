@@ -3,7 +3,9 @@
   flex-direction: column;
   width: 100px;
   height: 100vh;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
 
   &__logo {
     max-width: 150px;

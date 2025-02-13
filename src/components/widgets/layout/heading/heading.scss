@@ -3,10 +3,13 @@
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
-  max-width: 1600px;
+  padding-top: 15px;
+  font-size: 20px;
 
   &__phone {
     color: $green;
+    font-weight: 700;
+    letter-spacing: 3px;
   }
 
   &__write-us {
