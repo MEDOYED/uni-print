@@ -1,9 +1,11 @@
 import "./green-button.scss";
 
-const GreenButton = ({ text }) => {
+const GreenButton = ({ text, onClick }) => {
   return (
     <>
-      <button className="green-button">{text}</button>
+      <button onClick={onClick} className="green-button">
+        {text}
+      </button>
     </>
   );
 };
