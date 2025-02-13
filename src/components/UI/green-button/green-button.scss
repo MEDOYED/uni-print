@@ -1,0 +1,11 @@
+.green-button {
+  background-color: $green;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+}
