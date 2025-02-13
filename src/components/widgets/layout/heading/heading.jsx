@@ -10,7 +10,6 @@ const Heading = () => {
           +38 (098) 319 42 57
         </a>
         <GreenButton text={"Написати нам"} />
-        {/* <button className="heading__write-us">Написати нам</button> */}
       </div>
     </>
   );
