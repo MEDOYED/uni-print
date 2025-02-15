@@ -18,7 +18,7 @@ const InputName = () => {
         id="name"
         name="name"
         onChange={handleChange}
-        placeholder="Ваше і'мя"
+        placeholder="Ваше ім'я"
         required
       />
     </>
