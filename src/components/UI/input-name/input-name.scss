@@ -1,3 +1,45 @@
 .input-name {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  width: 360px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #2e2e2e;
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 15px;
+  border: 1px solid #222222;
+
+  :active {
+    border: 2px solid #5c5c5c;
+  }
+
+  .input-name {
+    margin-bottom: 30px;
+    width: 360px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #2e2e2e;
+    color: #fff;
+    font-size: 22px;
+    padding: 5px 15px;
+    border: 1px solid #555; /* Додаємо рамку для кращого вигляду */
+    outline: none; /* Вимикаємо стандартну обводку при фокусі */
+  }
+
+  /* Стилі для стану фокусу */
+  .input-name:focus {
+    background-color: #2e2e2e; /* Залишаємо фон чорним */
+    color: #fff; /* Залишаємо текст білим */
+    border-color: #777; /* Змінюємо колір рамки при фокусі */
+  }
+}
+
+/* Стилі для автозаповнення */
+.input-name:-webkit-autofill,
+.input-name:-webkit-autofill:hover,
+.input-name:-webkit-autofill:focus,
+.input-name:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important; /* Колір тексту */
+  -webkit-box-shadow: 0 0 0px 1000px #2e2e2e inset !important; /* Колір фону */
+  transition: background-color 5000s ease-in-out 0s; /* Вимкнення анімації зміни фону */
 }
