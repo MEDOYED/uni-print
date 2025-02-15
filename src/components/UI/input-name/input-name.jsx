@@ -11,7 +11,16 @@ const InputName = () => {
 
   return (
     <>
-      <input type="text" htmlFor="name" id="name" name="name" onChange={handleChange} required />
+      <input
+        className="input-name"
+        type="text"
+        htmlFor="name"
+        id="name"
+        name="name"
+        onChange={handleChange}
+        placeholder="Ваше і'мя"
+        required
+      />
     </>
   );
 };

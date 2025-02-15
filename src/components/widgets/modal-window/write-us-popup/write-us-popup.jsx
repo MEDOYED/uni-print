@@ -1,4 +1,8 @@
+import { X } from "lucide-react";
+
 import InputName from "../../../UI/input-name/input-name";
+import InputEmail from "../../../UI/input-email/input-email";
+import BtnSend from "../../../UI/btn-send/btn-send";
 
 import "./write-us-popup.scss";
 
@@ -7,16 +11,16 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
   return (
     <>
       <div className="write-us-popup">
-        <button onClick={onClick} className="close-window">
-          close
-        </button>
-        <form action="">
-          <InputName />
-
-          {/* <input type="tel" /> */}
-        </form>
-
-        <div>bob</div>
+        <div className="write-us-popup__content">
+          <button onClick={onClick} className="close-window">
+            <X />
+          </button>
+          <form className="form" action="">
+            <InputName />
+            <InputEmail />
+            <BtnSend text={"Надіслати"} />
+          </form>
+        </div>
       </div>
     </>
   );

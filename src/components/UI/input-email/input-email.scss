@@ -1,4 +1,4 @@
-.input-name {
+.input-email {
   margin-bottom: 30px;
   width: 360px;
   height: 40px;
@@ -12,17 +12,17 @@
 }
 
 /* Стилі для стану фокусу */
-.input-name:focus {
+.input-email:focus {
   background-color: #2e2e2e; /* Залишаємо фон чорним */
   color: #fff; /* Залишаємо текст білим */
   border-color: #777; /* Змінюємо колір рамки при фокусі */
 }
 
 /* Стилі для автозаповнення */
-.input-name:-webkit-autofill,
-.input-name:-webkit-autofill:hover,
-.input-name:-webkit-autofill:focus,
-.input-name:-webkit-autofill:active {
+.input-email:-webkit-autofill,
+.input-email:-webkit-autofill:hover,
+.input-email:-webkit-autofill:focus,
+.input-email:-webkit-autofill:active {
   -webkit-text-fill-color: #fff !important; /* Колір тексту */
   -webkit-box-shadow: 0 0 0px 1000px #2e2e2e inset !important; /* Колір фону */
   transition: background-color 5000s ease-in-out 0s; /* Вимкнення анімації зміни фону */
