@@ -7,16 +7,17 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
   return (
     <>
       <div className="write-us-popup">
-        <button onClick={onClick} className="close-window">
-          close
-        </button>
-        <form action="">
-          <InputName />
-
-          {/* <input type="tel" /> */}
-        </form>
-
-        <div>bob</div>
+        <div className="write-us-popup__content">
+          <button onClick={onClick} className="close-window">
+            close
+          </button>
+          <form className="form" action="">
+            <InputName className="input" />
+            <InputName />
+            <InputName />
+            <InputName />
+          </form>
+        </div>
       </div>
     </>
   );
