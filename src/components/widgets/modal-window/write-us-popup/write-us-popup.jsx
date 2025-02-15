@@ -11,43 +11,29 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
   const theme = useThemeStore((state) => state.theme);
   console.log(theme);
 
+  const writeUsPopupClassName = theme === "light" ? "write-us-popup light" : "write-us-popup";
+
+  const writeUsPopupContentClassName =
+    theme === "light" ? "write-us-popup__content light" : "write-us-popup__content";
+
   if (!isOpen) return null;
 
-  if (theme === "dark")
-    return (
-      <>
-        <div className="write-us-popup">
-          <div className="write-us-popup__content">
-            <button onClick={onClick} className="close-window">
-              <X />
-            </button>
-            <form className="form" action="">
-              <InputName />
-              <InputEmail />
-              <BtnSend text={"Надіслати"} />
-            </form>
-          </div>
+  return (
+    <>
+      <div className={writeUsPopupClassName}>
+        <div className={writeUsPopupContentClassName}>
+          <button onClick={onClick} className="close-window">
+            <X />
+          </button>
+          <form className="form" action="">
+            <InputName />
+            <InputEmail />
+            <BtnSend text={"Надіслати"} />
+          </form>
         </div>
-      </>
-    );
-
-  if (theme === "light")
-    return (
-      <>
-        <div className="write-us-popup light">
-          <div className="write-us-popup__content light">
-            <button onClick={onClick} className="close-window">
-              <X />
-            </button>
-            <form className="form" action="">
-              <InputName />
-              <InputEmail />
-              <BtnSend text={"Надіслати"} />
-            </form>
-          </div>
-        </div>
-      </>
-    );
+      </div>
+    </>
+  );
 };
 
 export default WriteUsPopup;
