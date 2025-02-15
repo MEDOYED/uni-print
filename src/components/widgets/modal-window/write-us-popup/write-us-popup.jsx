@@ -16,9 +16,6 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
           <form className="form" action="">
             <InputName />
             <InputEmail />
-            <InputName />
-            <InputName />
-            <InputName />
             <BtnSend text={"Надіслати"} />
           </form>
         </div>
