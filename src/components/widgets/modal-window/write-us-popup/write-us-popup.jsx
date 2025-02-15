@@ -12,7 +12,7 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
             close
           </button>
           <form className="form" action="">
-            <InputName className="input" />
+            <InputName />
             <InputName />
             <InputName />
             <InputName />
