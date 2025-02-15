@@ -1,4 +1,5 @@
 import InputName from "../../../UI/input-name/input-name";
+import InputEmail from "../../../UI/input-email/input-email";
 import BtnSend from "../../../UI/btn-send/btn-send";
 
 import "./write-us-popup.scss";
@@ -14,6 +15,7 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
           </button>
           <form className="form" action="">
             <InputName />
+            <InputEmail />
             <InputName />
             <InputName />
             <InputName />
