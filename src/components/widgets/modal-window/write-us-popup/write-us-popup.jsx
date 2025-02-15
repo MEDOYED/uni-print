@@ -1,4 +1,5 @@
 import InputName from "../../../UI/input-name/input-name";
+import BtnSend from "../../../UI/btn-send/btn-send";
 
 import "./write-us-popup.scss";
 
@@ -16,6 +17,7 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
             <InputName />
             <InputName />
             <InputName />
+            <BtnSend text={"Надіслати"} />
           </form>
         </div>
       </div>
