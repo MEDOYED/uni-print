@@ -17,7 +17,17 @@
   .close-window {
     display: flex;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+
+    .lucide-x {
+      scale: 1.5;
+      transition: stroke 0.2s ease;
+
+      &:hover {
+        stroke: $green;
+      }
+    }
   }
 
   .form {

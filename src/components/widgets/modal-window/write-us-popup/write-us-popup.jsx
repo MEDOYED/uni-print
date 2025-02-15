@@ -1,3 +1,5 @@
+import { X } from "lucide-react";
+
 import InputName from "../../../UI/input-name/input-name";
 import InputEmail from "../../../UI/input-email/input-email";
 import BtnSend from "../../../UI/btn-send/btn-send";
@@ -11,7 +13,7 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
       <div className="write-us-popup">
         <div className="write-us-popup__content">
           <button onClick={onClick} className="close-window">
-            close
+            <X />
           </button>
           <form className="form" action="">
             <InputName />
