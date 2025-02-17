@@ -18,7 +18,9 @@ function App() {
     <>
       <div className="container">
         <Header />
-        <HomePage />
+        <div className="page-wrapper">
+          <HomePage />
+        </div>
       </div>
     </>
   );
