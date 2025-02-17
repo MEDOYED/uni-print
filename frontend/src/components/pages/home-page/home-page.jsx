@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
       <div className="home-page">
         <Heading />
-        <SectionTitle title={"Проекти"} link={"Всі проекти"} />
+        <SectionTitle title="Проекти" link="Всі проекти" />
         <ProjectsSection />
       </div>
     </>
