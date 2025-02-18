@@ -1,5 +1,7 @@
 import { MoveRight } from "lucide-react";
 
+import CardProjects from "../../card/card-projects/card-projects";
+
 import kaktus from "../../../../assets/img/kaktus.jpeg";
 
 import "./projects-section.scss";
@@ -9,61 +11,14 @@ const ProjectsSection = () => {
     <>
       <section className="projects-section">
         <ul className="list">
-          <li className="list__item">
-            <img className="list__item-img" src={kaktus} alt="" />
-            <a className="list__item-link" href="#">
-              Детальніше <MoveRight />
-            </a>
-          </li>
-
-          <li className="list__item">
-            <img className="list__item-img" src={kaktus} alt="" />
-            <a className="list__item-link" href="#">
-              Детальніше <MoveRight />
-            </a>
-          </li>
-
-          <li className="list__item">
-            <img className="list__item-img" src={kaktus} alt="" />
-            <a className="list__item-link" href="#">
-              Детальніше <MoveRight />
-            </a>
-          </li>
-
-          <li className="list__item">
-            <img className="list__item-img" src={kaktus} alt="" />
-            <a className="list__item-link" href="#">
-              Детальніше <MoveRight />
-            </a>
-          </li>
-
-          <li className="list__item">
-            <img className="list__item-img" src={kaktus} alt="" />
-            <a className="list__item-link" href="#">
-              Детальніше <MoveRight />
-            </a>
-          </li>
-
-          <li className="list__item">
-            <img className="list__item-img" src={kaktus} alt="" />
-            <a className="list__item-link" href="#">
-              Детальніше <MoveRight />
-            </a>
-          </li>
-
-          <li className="list__item">
-            <img className="list__item-img" src={kaktus} alt="" />
-            <a className="list__item-link" href="#">
-              Детальніше <MoveRight />
-            </a>
-          </li>
-
-          <li className="list__item">
-            <img className="list__item-img" src={kaktus} alt="" />
-            <a className="list__item-link" href="#">
-              Детальніше <MoveRight />
-            </a>
-          </li>
+          <CardProjects src={kaktus} />
+          <CardProjects src={kaktus} />
+          <CardProjects src={kaktus} />
+          <CardProjects src={kaktus} />
+          <CardProjects src={kaktus} />
+          <CardProjects src={kaktus} />
+          <CardProjects src={kaktus} />
+          <CardProjects src={kaktus} />
         </ul>
       </section>
     </>
