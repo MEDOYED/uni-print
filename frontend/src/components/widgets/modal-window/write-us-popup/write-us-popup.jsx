@@ -63,6 +63,7 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
               value={formData.name}
               onChange={(value) => handleInputChange("name", value)}
             />
+
             <InputEmail
               value={formData.email}
               onChange={(value) => handleInputChange("email", value)}

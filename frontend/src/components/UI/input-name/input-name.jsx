@@ -1,15 +1,6 @@
-import { useState } from "react";
-
 import "./input-name.scss";
 
 const InputName = ({ value, onChange }) => {
-  // const [name, setName] = useState("");
-
-  // const handleChange = (e) => {
-  //   setName(e.target.value);
-  //   console.log(name);
-  // };
-
   return (
     <>
       <input
