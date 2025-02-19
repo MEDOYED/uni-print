@@ -13,6 +13,7 @@ const HomePage = () => {
         <SectionTitle title="Проекти" link="Всі проекти" />
         <ProjectsSection />
         <SectionTitle title="Послуги" link="Всі проекти" />
+        
         <AboutUs />
       </div>
     </>
