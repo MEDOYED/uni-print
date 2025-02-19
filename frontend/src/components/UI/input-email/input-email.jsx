@@ -1,6 +1,6 @@
 import "./input-email.scss";
 
-const InputEmail = () => {
+const InputEmail = ({ value, onChange }) => {
   return (
     <>
       <input
@@ -8,6 +8,8 @@ const InputEmail = () => {
         className="input-email"
         name="email"
         id="email"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
         placeholder="E-mail"
         required
       />

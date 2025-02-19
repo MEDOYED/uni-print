@@ -1,0 +1,15 @@
+.card-servise {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  &__icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  &__link {
+    font-size: 30px;
+  }
+}
