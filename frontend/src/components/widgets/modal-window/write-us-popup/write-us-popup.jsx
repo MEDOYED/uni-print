@@ -6,13 +6,14 @@ import axios from "axios";
 import InputName from "../../../UI/input-name/input-name";
 import InputPhoneNumber from "../../../UI/input-phone-number/input-phone-number";
 import InputEmail from "../../../UI/input-email/input-email";
+import TextArea from "../../../UI/text-area/text-area";
 import BtnSend from "../../../UI/btn-send/btn-send";
 
 import "./write-us-popup.scss";
 
 const WriteUsPopup = ({ isOpen, onClick }) => {
   // состояние для форми
-  const [formData, setFormData] = useState({ name: "", phone: "", email: "" });
+  const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "" });
 
   // получение теми с Zustand
   const theme = useThemeStore((state) => state.theme);
@@ -73,6 +74,12 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
               value={formData.email}
               onChange={(value) => handleInputChange("email", value)}
             />
+
+            <TextArea
+              value={formData.message}
+              onChange={(value) => handleInputChange("message", value)}
+            />
+
             <BtnSend text={"Надіслати"} />
           </form>
         </div>
