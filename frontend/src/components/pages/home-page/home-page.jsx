@@ -12,7 +12,7 @@ const HomePage = () => {
         <Heading />
         <SectionTitle title="Проекти" link="Всі проекти" />
         <ProjectsSection />
-        <SectionTitle title="Послуги" link="Всі проекти" />
+        <SectionTitle title="Послуги" link="Всі послуги" />
         <SectionServise />
       </div>
     </>
