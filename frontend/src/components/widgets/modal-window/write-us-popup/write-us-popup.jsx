@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 
 import InputName from "../../../UI/input-name/input-name";
+import InputPhoneNumber from "../../../UI/input-phone-number/input-phone-number";
 import InputEmail from "../../../UI/input-email/input-email";
 import BtnSend from "../../../UI/btn-send/btn-send";
 
@@ -11,7 +12,7 @@ import "./write-us-popup.scss";
 
 const WriteUsPopup = ({ isOpen, onClick }) => {
   // состояние для форми
-  const [formData, setFormData] = useState({ name: "", email: "" });
+  const [formData, setFormData] = useState({ name: "", phone: "", email: "" });
 
   // получение теми с Zustand
   const theme = useThemeStore((state) => state.theme);
@@ -62,6 +63,10 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
             <InputName
               value={formData.name}
               onChange={(value) => handleInputChange("name", value)}
+            />
+            <InputPhoneNumber
+              value={formData.phone.replace("+380", "")}
+              onChange={(value) => handleInputChange("phone", value)}
             />
 
             <InputEmail
