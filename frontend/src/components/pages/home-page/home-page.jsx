@@ -1,6 +1,7 @@
 import Heading from "../../widgets/layout/heading/heading";
 import ProjectsSection from "../../widgets/sections/projects-section/projects-section";
 import SectionTitle from "../../widgets/sections/section-title/section-title";
+import SectionServise from "../../widgets/sections/section-servise/section-servise";
 
 import "./home-page.scss";
 
@@ -12,6 +13,7 @@ const HomePage = () => {
         <SectionTitle title="Проекти" link="Всі проекти" />
         <ProjectsSection />
         <SectionTitle title="Послуги" link="Всі проекти" />
+        <SectionServise />
       </div>
     </>
   );
