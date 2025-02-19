@@ -1,5 +1,6 @@
 import { X } from "lucide-react";
 import useThemeStore from "../../../../store/themeStore";
+import { useState } from "react";
 
 import InputName from "../../../UI/input-name/input-name";
 import InputEmail from "../../../UI/input-email/input-email";
@@ -8,13 +9,32 @@ import BtnSend from "../../../UI/btn-send/btn-send";
 import "./write-us-popup.scss";
 
 const WriteUsPopup = ({ isOpen, onClick }) => {
+  // состояние для форми
+  const [formData, setFormData] = useState({ name: "", email: "" });
+
+  // получение теми с Zustand
   const theme = useThemeStore((state) => state.theme);
   console.log(theme);
 
+  // опридиление класов
   const writeUsPopupClassName = theme === "light" ? "write-us-popup light" : "write-us-popup";
-
   const writeUsPopupContentClassName =
     theme === "light" ? "write-us-popup__content light" : "write-us-popup__content";
+
+  // функиця для обновления сосояния форми
+  const handleInputChange = (field, value) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [field]: value,
+    }));
+  };
+
+  // отправка форми
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Send data:", formData);
+    // axious post
+  };
 
   if (!isOpen) return null;
 
@@ -25,9 +45,15 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
           <button onClick={onClick} className="close-window">
             <X />
           </button>
-          <form className="form" action="">
-            <InputName />
-            <InputEmail />
+          <form className="form" onSubmit={handleSubmit}>
+            <InputName
+              value={formData.name}
+              onChange={(value) => handleInputChange("name", value)}
+            />
+            <InputEmail
+              value={formData.email}
+              onChange={(value) => handleInputChange("email", value)}
+            />
             <BtnSend text={"Надіслати"} />
           </form>
         </div>

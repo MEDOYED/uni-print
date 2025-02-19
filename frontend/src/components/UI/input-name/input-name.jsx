@@ -2,22 +2,23 @@ import { useState } from "react";
 
 import "./input-name.scss";
 
-const InputName = () => {
-  const [name, setName] = useState("");
+const InputName = ({ value, onChange }) => {
+  // const [name, setName] = useState("");
 
-  const handleChange = (e) => {
-    console.log(e);
-  };
+  // const handleChange = (e) => {
+  //   setName(e.target.value);
+  //   console.log(name);
+  // };
 
   return (
     <>
       <input
         className="input-name"
         type="text"
-        htmlFor="name"
         id="name"
         name="name"
-        onChange={handleChange}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
         placeholder="Ваше ім'я"
         required
       />
