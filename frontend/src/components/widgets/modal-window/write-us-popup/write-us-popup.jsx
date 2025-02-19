@@ -1,6 +1,7 @@
 import { X } from "lucide-react";
 import useThemeStore from "../../../../store/themeStore";
 import { useState } from "react";
+import axios from "axios";
 
 import InputName from "../../../UI/input-name/input-name";
 import InputEmail from "../../../UI/input-email/input-email";
@@ -30,10 +31,22 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
   };
 
   // отправка форми
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Send data:", formData);
-    // axious post
+
+    // axios post
+    try {
+      const response = await axios.post("https://your-api-endpoint.com/send", formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log("ПЕРЕМОГА:", response.data);
+    } catch (error) {
+      console.log("Помилка:", error.response ? error.response.data : error.message);
+    }
   };
 
   if (!isOpen) return null;
