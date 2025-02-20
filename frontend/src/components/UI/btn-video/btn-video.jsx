@@ -1,13 +1,13 @@
-import './btn-video.scss'
+import "./btn-video.scss";
 
 const BtnVideo = ({ text }) => {
-    return (
-      <>
-        <button className="btn-send" type="submit">
-          {text}
-        </button>
-      </>
-    );
-  };
-  
-  export default BtnVideo;
+  return (
+    <>
+      <button className="btn-video" type="submit">
+        {text}
+      </button>
+    </>
+  );
+};
+
+export default BtnVideo;
