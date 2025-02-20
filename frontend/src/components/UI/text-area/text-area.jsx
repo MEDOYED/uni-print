@@ -4,6 +4,7 @@ const TextArea = ({ value, onChange }) => {
   return (
     <>
       <textarea
+        className="text-area"
         name="message"
         placeholder="Ваше повідомлення"
         value={value}
