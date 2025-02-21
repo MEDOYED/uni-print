@@ -3,7 +3,7 @@ import "./input-phone-number.scss";
 const InputPhoneNumber = ({ value, onChange }) => {
   const handleChange = (e) => {
     // Удаляем все нецифровие символи
-    let inputValue = e.target.value.replace(/\D/g, "").slice(0, 12);
+    let inputValue = e.target.value.replace(/\D/g, "").slice(0, 9);
 
     if (!inputValue.startsWith("380")) {
       // Добавляем 380, если пользователь случайно його стер
@@ -17,7 +17,7 @@ const InputPhoneNumber = ({ value, onChange }) => {
   };
 
   return (
-    <>
+    <div className="input-p-n">
       <input
         className="input-phone-number"
         type="tel"
@@ -25,14 +25,13 @@ const InputPhoneNumber = ({ value, onChange }) => {
         name="phone"
         value={value}
         onChange={handleChange}
-        placeholder="+380XXXXXXXXX"
+        placeholder="Ваш телефон"
         pattern="^[0-9]{9}$"
-        // етот потерн пока оставлю на всякий слкчай
-        // pattern="^\+380[0-9]{9}$"
         autoComplete="tel"
         required
       />
-    </>
+      <div className="input-p-n__overlay">+380</div>
+    </div>
   );
 };
 
