@@ -9,9 +9,9 @@ import somersby from "../../../../assets/img/projects/somersby.png";
 import stand from "../../../../assets/img/projects/stand.jpg";
 import whiteCar from "../../../../assets/img/projects/white-car.jpg";
 
-import "./projects-section.scss";
+import "./section-projects.scss";
 
-const ProjectsSection = () => {
+const SectionProjects = () => {
   return (
     <>
       <section className="projects-section">
@@ -30,4 +30,5 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+// export default ProjectsSection;
+export default SectionProjects;
