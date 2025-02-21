@@ -30,5 +30,4 @@ const SectionProjects = () => {
   );
 };
 
-// export default ProjectsSection;
 export default SectionProjects;
