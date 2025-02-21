@@ -1,6 +1,7 @@
 import { ALargeSmall } from "lucide-react";
 
 import CardServise from "../../card/card-servise/card-servise";
+import IconDesigner from "../../../UI/svg/icon-designer/icon-designer";
 
 import BrendAuto from "../../../../assets/img/Brenduvannya-auto.png";
 
@@ -16,7 +17,7 @@ const SectionServise = () => {
         <CardServise text="Оформлення вітрин" Icon={ALargeSmall} />
         <CardServise text="Картини на холсті" Icon={ALargeSmall} />
         <CardServise text="Поліграфічна продукція" Icon={ALargeSmall} />
-        <CardServise text="послуги дизайнера" Icon={ALargeSmall} />
+        <CardServise text="Послуги дизайнера" Icon={IconDesigner} />
       </ul>
     </>
   );
