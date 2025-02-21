@@ -2,6 +2,7 @@ import { Instagram } from "lucide-react";
 import { useState } from "react";
 
 import ToggleTheme from "../../../UI/togle-theme/toggle-theme";
+import BurgerMenu from "../../../UI/burger-menu/burger-menu";
 
 import logoIcon from "../../../../assets/img/logo.png";
 
@@ -42,6 +43,7 @@ const Header = () => {
         </button>
 
         <Instagram className="header__instagram-icon" />
+        <BurgerMenu isOpen={isOpen} />
       </header>
     </>
   );
