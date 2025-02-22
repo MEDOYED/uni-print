@@ -1,18 +1,22 @@
 import { MoveRight } from "lucide-react";
 
-import "./section-title.scss";
+import "./title-to-section.scss";
 
-const SectionTitle = ({ title, link }) => {
+const TitleToSection = ({ title, link }) => {
   return (
     <>
       <section className="section-title">
         <h2 className="section-title__title">{title}</h2>
         <a href="#" className="section-title__link">
-          {link} <MoveRight />
+          {link && (
+            <>
+              {link} <MoveRight />
+            </>
+          )}
         </a>
       </section>
     </>
   );
 };
 
-export default SectionTitle;
+export default TitleToSection;
