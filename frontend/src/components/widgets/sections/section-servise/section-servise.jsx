@@ -15,11 +15,11 @@ const SectionServise = () => {
   return (
     <>
       <ul className="section-servise">
-        <CardServise text="Виготовлення вивісок" Icon={ALargeSmall} />
         <CardServise
-          text="Широкоформатний друк"
+          text="Виготовлення вивісок"
           Icon={IconSignboard}
         />
+        <CardServise text="Широкоформатний друк" Icon={IconPrinter} />
         <CardServise
           text="Брендування автотранспорту"
           Icon={IconCar}
