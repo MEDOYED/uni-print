@@ -16,6 +16,7 @@ const HomePage = () => {
         <SectionTitle title="Послуги" link="Всі послуги" />
         <SectionServise />
         <AboutUs />
+        <SectionTitle title="Наші клієнти" />
       </div>
     </>
   );

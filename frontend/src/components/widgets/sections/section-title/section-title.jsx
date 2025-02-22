@@ -8,7 +8,11 @@ const SectionTitle = ({ title, link }) => {
       <section className="section-title">
         <h2 className="section-title__title">{title}</h2>
         <a href="#" className="section-title__link">
-          {link} <MoveRight />
+          {link && (
+            <>
+              {link} <MoveRight />
+            </>
+          )}
         </a>
       </section>
     </>
