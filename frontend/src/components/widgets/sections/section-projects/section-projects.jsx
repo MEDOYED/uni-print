@@ -20,14 +20,32 @@ const SectionProjects = () => {
     <>
       <section className="projects-section">
         <ul className="list">
-          <CardProjects src={vyvisky} />
-          <CardProjects src={whiteCar} />
-          <CardProjects src={babyBoss} />
-          <CardProjects src={testImg} />
-          <CardProjects src={somersby} />
-          <CardProjects src={paintOnCanvas} />
-          <CardProjects src={testImg} />
-          <CardProjects src={testImg} />
+          <CardProjects
+            src={vyvisky}
+            description="Виготовлення вивісок"
+          />
+          <CardProjects
+            src={whiteCar}
+            description="Брендування авто"
+          />
+          <CardProjects src={babyBoss} description="Друк фотозон" />
+          <CardProjects
+            src={testImg}
+            description="Рекламні конструкції і таблички"
+          />
+          <CardProjects
+            src={somersby}
+            description="Широкоформатниий друк"
+          />
+          <CardProjects
+            src={paintOnCanvas}
+            description="Друк картин на холсті"
+          />
+          <CardProjects
+            src={testImg}
+            description="Оформлення вітрин"
+          />
+          <CardProjects src={testImg} description="Поліграфія" />
         </ul>
       </section>
     </>
