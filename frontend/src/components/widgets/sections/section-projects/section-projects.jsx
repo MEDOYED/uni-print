@@ -1,5 +1,7 @@
 import CardProjects from "../../card/card-projects/card-projects";
 
+import testImg from "../../../../assets/img/kaktus.jpeg";
+
 import blackCar from "../../../../assets/img/projects/black-car.jpg";
 import eskulab from "../../../../assets/img/projects/eskulab.jpg";
 import babyBoss from "../../../../assets/img/projects/baby-boss.jpg";
@@ -21,11 +23,11 @@ const SectionProjects = () => {
           <CardProjects src={vyvisky} />
           <CardProjects src={whiteCar} />
           <CardProjects src={babyBoss} />
-          <CardProjects src={ProffessionalCosmetics} />
+          <CardProjects src={testImg} />
           <CardProjects src={somersby} />
           <CardProjects src={paintOnCanvas} />
-          <CardProjects src={stand} />
-          <CardProjects src={whiteCar} />
+          <CardProjects src={testImg} />
+          <CardProjects src={testImg} />
         </ul>
       </section>
     </>
