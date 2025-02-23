@@ -1,7 +1,27 @@
 .burger-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  color: white;
+  transition: left 0.3s ease-in-out;
+  z-index: 10;
+  display: flex;
+
+  .line {
+    display: flex;
+    width: 4px;
+    height: 0;
+    transform-origin: center;
+    background-color: #fff;
+  }
+
+  &--open {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: 250px;
     width: 300px;
     height: 100vh;
     background: #181818;
@@ -11,19 +31,29 @@
     display: flex;
 
     .line {
-        display: flex;
-        width: 4px;
-        height: 0;
-        transform-origin: center;
-        background-color: #fff;
+      width: 5px;
+      height: 5px;
+      background-color: #fff;
+      border-radius: 50px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%) scaleY(0);
+      transform-origin: center;
+      animation: expandToLine 0.5s ease-in-out forwards;
     }
 
-    &--open {
-        position: fixed;
-        top: 0;
-        left: 250px;
-        width: 300px;
+    @keyframes expandToLine {
+      0% {
+        transform: translate(-50%, -50%) scaleY(0);
+      }
+      50% {
+        transform: translate(-50%, -50%) scaleY(0.1);
+      }
+      100% {
+        transform: translate(-50%, -50%) scaleY(1);
         height: 100vh;
+
         background: #181818; 
         color: white;
         transition: left 0.3s ease-in-out;
@@ -41,20 +71,11 @@
                 transform-origin: center;
                 animation: expandToLine .5s ease-in-out forwards;
             }
+      }
+    }
 
-            @keyframes expandToLine {
-                0% {
-                    transform: translate(-50%, -50%) scaleY(0);
-                }
-                50% {
-                    transform: translate(-50%, -50%) scaleY(0.1);
-                }
-                100% {
-                    transform: translate(-50%, -50%) scaleY(1);
-                    height: 100vh;
-                    border-radius: 0;
-                }
-            }
+
+
 
             .list {
                 display: flex;
@@ -111,7 +132,7 @@
                     }
                 }
             }
-        }
 
-    
-}
+        }
+      }
+ 
