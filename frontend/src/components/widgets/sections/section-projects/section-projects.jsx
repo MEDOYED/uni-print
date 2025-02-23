@@ -17,10 +17,10 @@ const SectionProjects = () => {
       <section className="projects-section">
         <ul className="list">
           <CardProjects src={blackCar} />
-          <CardProjects src={eskulab} />
+          <CardProjects src={whiteCar} />
           <CardProjects src={babyBoss} />
           <CardProjects src={ProffessionalCosmetics} />
-          <CardProjects src={shoco} />
+          <CardProjects src={somersby} />
           <CardProjects src={somersby} />
           <CardProjects src={stand} />
           <CardProjects src={whiteCar} />
