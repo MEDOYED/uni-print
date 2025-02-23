@@ -8,7 +8,10 @@ const CardProjects = ({ src }) => {
       <li className="card-projects__item">
         <img className="card-projects__item-img" src={src} alt="" />
         <a className="card-projects__item-link" href="#">
-          Детальніше <MoveRight />
+          <div className="description">Виготовлення вивісок</div>
+          <span className="read-more">
+            Детальніше <MoveRight />
+          </span>
         </a>
       </li>
     </>
