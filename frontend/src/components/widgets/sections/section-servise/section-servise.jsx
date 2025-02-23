@@ -10,6 +10,7 @@ import IconPrinter from "../../../UI/svg/icon-printer/icon-printer";
 import IconSignboard from "../../../UI/svg/icon-signboard/icon-signboard";
 import IconAdStructure from "../../../UI/svg/icon-ad-structure/icon-ad-structure";
 import IconPhotoZone from "../../../UI/svg/icon-photo-zone/icon-photo-zone";
+import IconGrowthFigure from "../../../UI/svg/icon-growth-figure/icon-growth-figure";
 
 import "./section-servise.scss";
 
@@ -38,6 +39,7 @@ const SectionServise = () => {
           Icon={IconAdStructure}
         />
         <CardServise text="Послуги дизайнера" Icon={IconDesigner} />
+        <CardServise text="Ростові фігури" Icon={IconGrowthFigure} />
       </ul>
     </>
   );
