@@ -4,8 +4,8 @@ import TitleToSection from "../../widgets/layout/title-to-section/title-to-secti
 import SectionServise from "../../widgets/sections/section-servise/section-servise";
 import AboutUs from "../../widgets/sections/about-us-section/about-us-section";
 import SectionOurClients from "../../widgets/sections/section-our-clients/section-our-clients";
-
 import LineWhiteHorizontal from "../../UI/line/line-white-horizontal/line-white-horizontal";
+import SectionContact from "../../widgets/sections/section-contact/section-contact";
 
 import "./home-page.scss";
 
@@ -21,6 +21,8 @@ const HomePage = () => {
         <AboutUs />
         <TitleToSection title="Наші клієнти" />
         <SectionOurClients />
+        <LineWhiteHorizontal />
+        <SectionContact />
         <LineWhiteHorizontal />
       </div>
     </>
