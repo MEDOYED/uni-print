@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import BtnPhone from "../../../UI/buttons/btn-tel/btn-phone";
 import GreenButton from "../../../UI/green-button/green-button";
 import WriteUsPopup from "../../modal-window/write-us-popup/write-us-popup";
 
@@ -14,9 +15,7 @@ const Heading = () => {
   return (
     <>
       <div className="heading">
-        <a href="tel:+380983194257" className="heading__phone">
-          +38 (098) 319 42 57
-        </a>
+        <BtnPhone />
         <GreenButton onClick={openWindow} text={"Написати нам"} />
         <WriteUsPopup isOpen={isOpen} onClick={closePopup} />
       </div>
