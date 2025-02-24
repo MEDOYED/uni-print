@@ -5,6 +5,8 @@ import SectionServise from "../../widgets/sections/section-servise/section-servi
 import AboutUs from "../../widgets/sections/about-us-section/about-us-section";
 import SectionOurClients from "../../widgets/sections/section-our-clients/section-our-clients";
 
+import LineWhiteHorizontal from "../../UI/line/line-white-horizontal/line-white-horizontal";
+
 import "./home-page.scss";
 
 const HomePage = () => {
@@ -19,6 +21,7 @@ const HomePage = () => {
         <AboutUs />
         <TitleToSection title="Наші клієнти" />
         <SectionOurClients />
+        <LineWhiteHorizontal />
       </div>
     </>
   );
