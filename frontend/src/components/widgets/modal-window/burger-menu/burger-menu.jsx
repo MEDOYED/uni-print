@@ -12,11 +12,6 @@ const BurgerMenu = ({ isOpen }) => {
       <div className={menuClassName}>
         <div className="line"></div>
         <ul className="list">
-          <li className="list__item-language">
-            <span>Укр</span>
-            <span>Рус</span>
-          </li>
-
           <Link to={"/"} className="list__item">
             ГЛАВНАЯ
           </Link>

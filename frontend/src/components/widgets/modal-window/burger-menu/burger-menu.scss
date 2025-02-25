@@ -64,24 +64,6 @@
       justify-content: center;
       height: 100vh;
 
-      &__item-language {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 25px;
-        padding-left: 20px;
-        font-size: 20px;
-        margin-bottom: 25px;
-        span {
-          cursor: pointer;
-          transition: color 0.3s ease;
-
-          &:hover {
-            color: #b5e928;
-          }
-        }
-      }
-
       &__item {
         margin: 10px 0;
         padding-left: 20px;
