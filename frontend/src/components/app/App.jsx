@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Outlet } from "react-router";
 
 import useThemeStore from "../../store/themeStore";
 
@@ -15,14 +16,12 @@ function App() {
   }, [theme]);
 
   return (
-    <>
-      <div className="container">
-        <Header />
-        <div className="page-wrapper">
-          <HomePage />
-        </div>
+    <div className="container">
+      <Header />
+      <div className="page-wrapper">
+        <Outlet />
       </div>
-    </>
+    </div>
   );
 }
 
