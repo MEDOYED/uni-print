@@ -25,9 +25,8 @@ const SectionContact = () => {
           muted
         />
         <div className="content">
-          <h2 className="content__heading">
-            Залишились питання, чи потрібна консультація?
-          </h2>
+          <h2 className="content__heading">Залишились питання?</h2>
+          <h2 className="content__heading">Потрібна консультація?</h2>
           <span className="content__text">Телефонуйте нам</span>
           <BtnPhone />
           <span className="content__text">Пишіть нам</span>
