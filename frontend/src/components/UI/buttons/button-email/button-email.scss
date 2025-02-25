@@ -1,0 +1,11 @@
+.button-email {
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.2s ease;
+  font-size: 20px;
+  max-width: max-content;
+
+  &:hover {
+    color: $green;
+  }
+}

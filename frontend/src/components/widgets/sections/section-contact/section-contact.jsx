@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 
 import BtnPhone from "../../../UI/buttons/btn-tel/btn-phone";
 import GreenButton from "../../../UI/green-button/green-button";
+import ButtonEmail from "../../../UI/buttons/button-email/button-email";
 
 import planeAnimation from "../../../../assets/video/plane-animation.json";
 
@@ -24,7 +25,7 @@ const SectionContact = () => {
           <span className="content__text">Телефонуйте нам</span>
           <BtnPhone />
           <span className="content__text">Пишіть нам</span>
-          <BtnPhone margin="0px 0px 50px 0px" />
+          <ButtonEmail margin="0px 0px 50px 0px" />
           <GreenButton text="Заповніть форму" />
         </div>
       </section>
