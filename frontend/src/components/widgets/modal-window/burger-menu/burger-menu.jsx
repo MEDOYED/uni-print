@@ -13,16 +13,16 @@ const BurgerMenu = ({ isOpen }) => {
         <div className="line"></div>
         <ul className="list">
           <Link to={"/"} className="list__item">
-            ГЛАВНАЯ
+            ГОЛОВНА
           </Link>
           <Link to={"/projects"} className="list__item">
-            ПРОЕКТЫ
+            ПРОЕКТИ
           </Link>
           <Link to={"/services"} className="list__item">
-            УСЛУГИ
+            ПОСЛУГИ
           </Link>
           <Link to={"/about"} className="list__item">
-            О НАС
+            ПРО НАС
           </Link>
           {/* <Link to={""} className="list__item">
             НОВОСТИ
@@ -31,7 +31,7 @@ const BurgerMenu = ({ isOpen }) => {
             FAQ
           </Link> */}
           <Link to={"/contacts"} className="list__item">
-            КОНТАКТЫ
+            КОНТАКТИ
           </Link>
         </ul>
       </div>
