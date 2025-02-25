@@ -36,7 +36,7 @@ const BurgerMenu = ({ isOpen }) => {
         </ul>
       </div>
     </div>,
-    document.getElementById("burger-root"),
+    document.getElementById("root"),
   );
 };
 
