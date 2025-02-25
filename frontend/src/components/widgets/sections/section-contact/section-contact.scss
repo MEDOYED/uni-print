@@ -4,4 +4,19 @@
   .video {
     width: 600px;
   }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: auto 50px;
+
+    &__heading {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      margin: 20px 20px;
+    }
+  }
 }
