@@ -91,13 +91,13 @@
           left: 0;
           width: 0;
           height: 2px;
-          background-color: #b5e928;
+          background-color: $green;
           transition: width 0.3s ease-in-out;
           transform-origin: left;
         }
 
         &:hover {
-          color: #b5e928;
+          color: $green;
         }
 
         &:hover::after {
