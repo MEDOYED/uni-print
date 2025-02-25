@@ -1,5 +1,12 @@
 .btn-phone {
-  color: $green;
+  color: #fff;
+
   font-weight: 700;
   letter-spacing: 3px;
+  max-width: max-content;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $green;
+  }
 }
