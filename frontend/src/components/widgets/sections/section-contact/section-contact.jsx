@@ -24,7 +24,7 @@ const SectionContact = () => {
           <span className="content__text">Телефонуйте нам</span>
           <BtnPhone />
           <span className="content__text">Пишіть нам</span>
-          <BtnPhone margin="0px 0px 18px 0px" />
+          <BtnPhone margin="0px 0px 50px 0px" />
           <GreenButton text="Заповніть форму" />
         </div>
       </section>
