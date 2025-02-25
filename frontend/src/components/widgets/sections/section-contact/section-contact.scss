@@ -1,0 +1,24 @@
+.section-contact {
+  display: flex;
+
+  .video {
+    width: 600px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 50px auto 150px;
+
+    &__heading {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      margin: 20px 20px;
+    }
+  }
+}
