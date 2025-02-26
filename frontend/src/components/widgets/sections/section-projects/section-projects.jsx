@@ -4,20 +4,22 @@ import projects from "../../../../assets/data/projects.json";
 
 import "./section-projects.scss";
 
-const SectionProjects = () => {
+const SectionProjects = ({ limit }) => {
+  const dislayedProjects = limit
+    ? projects.slice(0, limit)
+    : projects;
+
   return (
     <>
       <section className="projects-section">
         <ul className="list">
-          {projects
-            .filter(project => project.id < 9)
-            .map(project => (
-              <CardProjects
-                key={project.id}
-                src={project.src}
-                description={project.description}
-              />
-            ))}
+          {dislayedProjects.map(project => (
+            <CardProjects
+              key={project.id}
+              src={project.src}
+              description={project.description}
+            />
+          ))}
         </ul>
       </section>
     </>

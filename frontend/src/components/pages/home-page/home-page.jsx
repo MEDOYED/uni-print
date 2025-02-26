@@ -19,7 +19,7 @@ const HomePage = () => {
           linkText="Всі проекти"
           link="/projects"
         />
-        <SectionProjects />
+        <SectionProjects limit={8} />
         <TitleToSection
           title="Послуги"
           linkText="Всі послуги"
