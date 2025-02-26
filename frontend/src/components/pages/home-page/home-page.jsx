@@ -14,9 +14,17 @@ const HomePage = () => {
     <>
       <div className="home-page">
         <Heading />
-        <TitleToSection title="Проекти" link="Всі проекти" />
+        <TitleToSection
+          title="Проекти"
+          linkText="Всі проекти"
+          link="/projects"
+        />
         <SectionProjects />
-        <TitleToSection title="Послуги" link="Всі послуги" />
+        <TitleToSection
+          title="Послуги"
+          linkText="Всі послуги"
+          link="/services"
+        />
         <SectionServise />
         <AboutUs />
         <TitleToSection title="Наші клієнти" />

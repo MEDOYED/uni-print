@@ -1,19 +1,22 @@
 import { MoveRight } from "lucide-react";
+import { Link } from "react-router";
 
 import "./title-to-section.scss";
 
-const TitleToSection = ({ title, link }) => {
+const TitleToSection = ({ title, linkText, link }) => {
   return (
     <>
       <section className="section-title">
         <h2 className="section-title__title">{title}</h2>
-        <a href="#" className="section-title__link">
+        <div className="section-title__link">
           {link && (
             <>
-              {link} <MoveRight />
+              <Link to={link}>
+                {linkText} <MoveRight />
+              </Link>
             </>
           )}
-        </a>
+        </div>
       </section>
     </>
   );

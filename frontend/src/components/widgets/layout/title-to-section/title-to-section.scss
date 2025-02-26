@@ -9,7 +9,7 @@
     font-size: calc(18px + 22 * (100vw - 320px) / 1600);
   }
 
-  &__link {
+  &__link a {
     grid-column: 3;
     justify-self: end;
     display: flex;
