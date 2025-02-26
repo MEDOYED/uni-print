@@ -49,7 +49,13 @@ const Header = () => {
           </svg>
         </button>
 
-        <Instagram className="header__instagram-icon" />
+        <a
+          href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
+          target="_blank"
+        >
+          <Instagram className="header__instagram-icon" />
+        </a>
+
         <BurgerMenu isOpen={isOpen} />
       </header>
     </>
