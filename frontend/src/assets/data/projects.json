@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "src": "/assets/img/projects/vyvisky.jpg",
+    "description": "Виготовлення вивісок"
+  },
+  {
+    "id": 2,
+    "src": "/assets/img/projects/white-car.jpg",
+    "description": "Брендування авто"
+  },
+  {
+    "id": 3,
+    "src": "/assets/img/projects/baby-boss.jpg",
+    "description": "Друк фотозон"
+  },
+  {
+    "id": 4,
+    "src": "/assets/img/test/kaktus.jpeg",
+    "description": "Рекламні конструкції і таблички"
+  },
+  {
+    "id": 5,
+    "src": "/assets/img/projects/somersby.png",
+    "description": "Широкоформатниий друк"
+  },
+  {
+    "id": 6,
+    "src": "/assets/img/projects/paint-on-canvas.jpg",
+    "description": "Друк картин на холсті"
+  },
+  {
+    "id": 7,
+    "src": "/assets/img/test/kaktus.jpeg",
+    "description": "Оформлення вітрин"
+  },
+  {
+    "id": 8,
+    "src": "/assets/img/test/kaktus.jpeg",
+    "description": "Поліграфія"
+  },
+  {
+    "id": 9,
+    "src": "/assets/img/test/kaktus.jpeg",
+    "description": "Поліграфія"
+  }
+]
