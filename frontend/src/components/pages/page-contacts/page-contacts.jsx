@@ -1,9 +1,11 @@
+import SectionContact from "../../widgets/sections/section-contact/section-contact";
+
 import "./page-contacts.scss";
 
 const PageContacts = () => {
   return (
     <>
-      <div>PageContacts</div>
+      <SectionContact title="Наші контакти" address />
     </>
   );
 };

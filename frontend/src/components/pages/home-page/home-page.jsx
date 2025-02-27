@@ -30,7 +30,9 @@ const HomePage = () => {
         <TitleToSection title="Наші клієнти" />
         <SectionOurClients />
         <LineWhiteHorizontal />
-        <SectionContact />
+        <SectionContact
+          title={"Залишились питання?\nПотрібна консультація?"}
+        />
         <LineWhiteHorizontal />
       </div>
     </>
