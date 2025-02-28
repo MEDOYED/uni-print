@@ -9,8 +9,8 @@ import {
 import "./section-map.scss";
 
 const SectionMap = () => {
-  const latitude = 49.85746999061118;
-  const longitude = 24.038230710903044;
+  const latitude = 49.858044086215145;
+  const longitude = 24.03789111445985;
   const zoom = 13;
   const s = "a"; // subdomain
 
