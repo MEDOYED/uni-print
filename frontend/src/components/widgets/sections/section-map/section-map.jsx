@@ -26,20 +26,24 @@ const SectionMap = () => {
 
   return (
     <>
-      <MapContainer
-        center={[latitude, longitude]}
-        zoom={zoom}
-        style={{ height: "400px", width: "100%" }}
-      >
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
+      <section className="section-map">
+        <MapContainer
+          center={[latitude, longitude]}
+          zoom={zoom}
+          style={{ height: "400px", width: "100%" }}
+        >
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
 
-        <Marker position={[latitude, longitude]} ref={markerRef}>
-          <Popup>Test</Popup>
-        </Marker>
-      </MapContainer>
+          {/* className="leaflet-popup-content-wrapper" */}
+          <Marker position={[latitude, longitude]} ref={markerRef}>
+            {/* className="leaflet-popup-content-wrapper" */}
+            <Popup>вулиця Жовківська, 28</Popup>
+          </Marker>
+        </MapContainer>
+      </section>
     </>
   );
 };
