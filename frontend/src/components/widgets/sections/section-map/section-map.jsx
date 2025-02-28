@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -13,6 +14,16 @@ const SectionMap = () => {
   const zoom = 13;
   const s = "a"; // subdomain
 
+  const markerRef = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (markerRef.current) {
+        markerRef.current.openPopup();
+      }
+    }, 10);
+  }, []);
+
   return (
     <>
       <MapContainer
@@ -25,7 +36,7 @@ const SectionMap = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
 
-        <Marker position={[latitude, longitude]}>
+        <Marker position={[latitude, longitude]} ref={markerRef}>
           <Popup>Test</Popup>
         </Marker>
       </MapContainer>
