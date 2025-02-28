@@ -15,10 +15,22 @@
     &__heading {
       font-size: 45px;
       margin-bottom: 10px;
+      white-space: pre-line;
     }
 
     &__text {
       margin: 20px 20px;
+    }
+
+    &__address {
+      letter-spacing: 3px;
+      transition: color 0.2s ease;
+      font-weight: bold;
+
+      &:hover {
+        color: $green;
+        cursor: pointer;
+      }
     }
   }
 }

@@ -9,6 +9,7 @@ import PageServices from "./components/pages/page-services/page-services.jsx";
 import PageAbout from "./components/pages/page-about/page-about.jsx";
 import PageContacts from "./components/pages/page-contacts/page-contacts.jsx";
 
+import "leaflet/dist/leaflet.css";
 import "./main.css";
 
 const root = document.getElementById("root");

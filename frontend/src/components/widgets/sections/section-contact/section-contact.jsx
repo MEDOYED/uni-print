@@ -10,7 +10,7 @@ import planeAnimation from "../../../../assets/video/plane-animation.json";
 
 import "./section-contact.scss";
 
-const SectionContact = () => {
+const SectionContact = ({ title, address }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openPopUp = () => setIsOpen(true);
@@ -25,8 +25,15 @@ const SectionContact = () => {
           muted
         />
         <div className="content">
-          <h2 className="content__heading">Залишились питання?</h2>
-          <h2 className="content__heading">Потрібна консультація?</h2>
+          <h2 className="content__heading">{title}</h2>
+          {address && (
+            <>
+              <span className="content__text">Наша адреса:</span>
+              <div className="content__address">
+                вулиця Жовківська, 28
+              </div>
+            </>
+          )}
           <span className="content__text">Телефонуйте нам</span>
           <BtnPhone />
           <span className="content__text">Пишіть нам</span>
