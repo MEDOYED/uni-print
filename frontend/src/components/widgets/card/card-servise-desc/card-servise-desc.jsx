@@ -1,3 +1,5 @@
+import ButtonReadMore from "../../../UI/buttons/button-read-more/button-read-more";
+
 import "./card-servise-desc.scss";
 
 const CardServiseDesc = () => {
@@ -11,6 +13,7 @@ const CardServiseDesc = () => {
           людина сприймає візуальну інформацію у тривимірному форматі,
           тому...
         </p>
+        <ButtonReadMore />
       </div>
     </>
   );
