@@ -1,4 +1,4 @@
-import { MoveRight } from "lucide-react";
+import ButtonReadMore from "../../../UI/buttons/button-read-more/button-read-more";
 
 import "./card-projects.scss";
 
@@ -9,9 +9,7 @@ const CardProjects = ({ src, description }) => {
         <img className="card-projects__item-img" src={src} alt="" />
         <a className="card-projects__item-link" href="#">
           <div className="description">{description}</div>
-          <span className="read-more">
-            Детальніше <MoveRight />
-          </span>
+          <ButtonReadMore />
         </a>
       </li>
     </>
