@@ -1,0 +1,14 @@
+.card-animated-icon {
+  .video {
+    position: relative;
+    width: 200px;
+
+    .icon {
+      width: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
