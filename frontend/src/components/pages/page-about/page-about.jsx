@@ -1,4 +1,5 @@
 import Heading from "../../widgets/layout/heading/heading";
+import SectionContact from "../../widgets/sections/section-contact/section-contact";
 
 import testImg from "/assets/img/test/kaktus.jpeg";
 
@@ -52,6 +53,7 @@ const PageAbout = () => {
           />
         </div>
       </section>
+      <SectionContact />
     </>
   );
 };
