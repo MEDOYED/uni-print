@@ -1,16 +1,17 @@
 .card-animated-icon {
-  // max-width: 250px;
+  position: relative;
 
-  .video {
-    position: relative;
+  &__video {
     width: 190px;
+    height: 190px;
+  }
 
-    .icon {
-      width: 90px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+  &__icon {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
   }
 }

@@ -4,10 +4,13 @@ import CardServiseDesc from "../../card/card-servise-desc/card-servise-desc";
 
 import "./section-servise-desc.scss";
 
-const SectionServiseDesc = () => {
+const SectionServiseDesc = ({ reverse }) => {
+  const className = reverse
+    ? "servise-desc__reverse"
+    : "servise-desc";
   return (
     <>
-      <section className="servise-desc">
+      <section className={className}>
         <CardAnimatedIcon Icon={IconCar} />
         <CardServiseDesc />
       </section>

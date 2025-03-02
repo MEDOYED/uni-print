@@ -8,6 +8,15 @@ const PageServices = () => {
     <>
       <Heading />
       <SectionServiseDesc />
+      <SectionServiseDesc reverse />
+      <SectionServiseDesc />
+      <SectionServiseDesc reverse />
+      <SectionServiseDesc />
+      <SectionServiseDesc reverse />
+      <SectionServiseDesc />
+      <SectionServiseDesc reverse />
+      <SectionServiseDesc />
+      <SectionServiseDesc reverse />
     </>
   );
 };

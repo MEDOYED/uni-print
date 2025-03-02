@@ -1,4 +1,12 @@
 .servise-desc {
   display: flex;
   margin: 40px;
+  gap: 130px;
+}
+
+.servise-desc__reverse {
+  display: flex;
+  margin: 40px;
+  flex-direction: row-reverse;
+  gap: 130px;
 }
