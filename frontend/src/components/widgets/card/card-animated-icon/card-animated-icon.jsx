@@ -1,23 +1,30 @@
 import Lottie from "lottie-react";
+import { useMemo } from "react";
 
 import animationVideo from "../../../../assets/video/animation-servises.json";
 
 import "./card-animated-icon.scss";
 
 const CardAnimatedIcon = ({ Icon }) => {
-  console.log(Icon);
+  console.log("Rendering CardAnimatedIcon");
+
+  const memoizedAnimation = useMemo(() => animationVideo, []);
 
   return (
     <>
       <div className="card-animated-icon">
         <Lottie
-          className="video"
-          animationData={animationVideo}
+          className="card-animated-icon__video"
+          animationData={memoizedAnimation}
           loop
           muted
-        >
-          <Icon className="icon" />
-        </Lottie>
+          rendererSettings={{
+            preserveAspectRatio: "xMidYMid slice",
+            progressiveLoad: true,
+          }}
+        />
+
+        <Icon className="card-animated-icon__icon" />
       </div>
     </>
   );

@@ -2,17 +2,12 @@ import ButtonReadMore from "../../../UI/buttons/button-read-more/button-read-mor
 
 import "./card-servise-desc.scss";
 
-const CardServiseDesc = () => {
+const CardServiseDesc = ({ heading, text }) => {
   return (
     <>
       <div className="card-servise-desc">
-        <h2 className="heading">Об'ємні літери</h2>
-        <p className="text">
-          Люди, які створюють візуальні об’єкти, намагаються досягти
-          максимальної реалістичності сприйняття об’єкту. Оскільки
-          людина сприймає візуальну інформацію у тривимірному форматі,
-          тому...
-        </p>
+        <h2 className="card-servise-desc__heading">{heading}</h2>
+        <p className="card-servise-desc__text">{text}</p>
         <ButtonReadMore />
       </div>
     </>
