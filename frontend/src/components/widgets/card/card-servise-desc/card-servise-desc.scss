@@ -1,0 +1,15 @@
+.card-servise-desc {
+  border: 3px solid #666;
+  position: relative;
+  padding: 10px 20px;
+  margin-left: 130px;
+
+  &__heading {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}
