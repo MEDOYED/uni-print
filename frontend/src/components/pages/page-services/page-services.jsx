@@ -1,5 +1,6 @@
 import Heading from "../../widgets/layout/heading/heading";
 import SectionServiseDesc from "../../widgets/sections/section-servise-desc/section-servise-desc";
+import SectionContact from "../../widgets/sections/section-contact/section-contact";
 
 import IconAdStructure from "../../UI/svg/icon-ad-structure/icon-ad-structure";
 import IconCar from "../../UI/svg/icon-car/icon-car";
@@ -72,6 +73,10 @@ const PageServices = () => {
         heading="Ростові фігури"
         text="Ростові фігури — це реалістичні макети в повний зріст, які здатні миттєво привернути увагу потенційних клієнтів та підкреслити унікальність вашого бренду чи пропозиції. Вони слугують ефектним маркетинговим інструментом для будь-яких заходів та торговельних точок."
         Icon={IconGrowthFigure}
+      />
+
+      <SectionContact
+        title={"Залишились питання? \n Потрібна консультація?"}
       />
     </>
   );
