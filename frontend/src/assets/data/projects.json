@@ -49,11 +49,7 @@
     "src": "/assets/img/projects/reklam-konstruk/2.jpg",
     "description": "Рекламні конструкції і таблички"
   },
-  {
-    "id": 11,
-    "src": "/assets/img/projects/shyrokoformat/2.jpg",
-    "description": "Широкоформатниий друк"
-  },
+
   {
     "id": 12,
     "src": "/assets/img/projects/auto/2.jpg",
@@ -70,6 +66,36 @@
     "description": "Оформлення вітрин"
   },
   {
+    "id": 22,
+    "src": "/assets/img/projects/shyrokoformat/8.jpg",
+    "description": "Широкоформатниий друк"
+  },
+  {
+    "id": 22,
+    "src": "/assets/img/projects/shyrokoformat/9.jpg",
+    "description": "Широкоформатниий друк"
+  },
+  {
+    "id": 22,
+    "src": "/assets/img/projects/shyrokoformat/10.jpg",
+    "description": "Широкоформатниий друк"
+  },
+  {
+    "id": 22,
+    "src": "/assets/img/projects/shyrokoformat/11.jpg",
+    "description": "Широкоформатниий друк"
+  },
+  {
+    "id": 22,
+    "src": "/assets/img/projects/shyrokoformat/12.jpg",
+    "description": "Широкоформатниий друк"
+  },
+  {
+    "id": 26,
+    "src": "/assets/img/projects/vyvisky/7.jpg",
+    "description": "Виготовлення вивісок"
+  },
+  {
     "id": 15,
     "src": "/assets/img/projects/poligrafija/2.jpg",
     "description": "Поліграфія"
@@ -84,11 +110,7 @@
     "src": "/assets/img/projects/auto/3.jpg",
     "description": "Брендування авто"
   },
-  {
-    "id": 18,
-    "src": "/assets/img/projects/fotozone/2.jpg",
-    "description": "Друк фотозон"
-  },
+
   {
     "id": 19,
     "src": "/assets/img/projects/reklam-konstruk/3.jpg",
@@ -364,6 +386,11 @@
     "description": "Ростові фігури"
   },
   {
+    "id": 11,
+    "src": "/assets/img/projects/shyrokoformat/2.jpg",
+    "description": "Широкоформатниий друк"
+  },
+  {
     "id": 9,
     "src": "/assets/img/projects/rostovi-figury/6.jpg",
     "description": "Ростові фігури"
@@ -388,36 +415,6 @@
     "id": 22,
     "src": "/assets/img/projects/shyrokoformat/7.jpg",
     "description": "Широкоформатниий друк"
-  },
-  {
-    "id": 22,
-    "src": "/assets/img/projects/shyrokoformat/8.jpg",
-    "description": "Широкоформатниий друк"
-  },
-  {
-    "id": 22,
-    "src": "/assets/img/projects/shyrokoformat/9.jpg",
-    "description": "Широкоформатниий друк"
-  },
-  {
-    "id": 22,
-    "src": "/assets/img/projects/shyrokoformat/10.jpg",
-    "description": "Широкоформатниий друк"
-  },
-  {
-    "id": 22,
-    "src": "/assets/img/projects/shyrokoformat/11.jpg",
-    "description": "Широкоформатниий друк"
-  },
-  {
-    "id": 22,
-    "src": "/assets/img/projects/shyrokoformat/12.jpg",
-    "description": "Широкоформатниий друк"
-  },
-  {
-    "id": 26,
-    "src": "/assets/img/projects/vyvisky/7.jpg",
-    "description": "Виготовлення вивісок"
   },
 
   {
