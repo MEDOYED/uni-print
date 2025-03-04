@@ -8,9 +8,13 @@
 
   &__btn-item {
     white-space: pre-wrap;
-    border-bottom: 2px solid $green;
+    // border-top: 1px solid $green;
+    border-left: 2px solid $green;
+    border-right: 2px solid $green;
+    // border-bottom: 1px solid $green;
     padding: 10px 15px;
     border-radius: 30px;
+    height: 45px;
 
     &.active {
       white-space: pre-wrap;
