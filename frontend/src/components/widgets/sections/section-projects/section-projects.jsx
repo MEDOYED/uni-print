@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useParams } from "react-router";
 
 import CardProjects from "../../card/card-projects/card-projects";
 
@@ -6,100 +6,45 @@ import projects from "../../../../assets/data/projects.json";
 
 import "./section-projects.scss";
 
+const mapFilter = {
+  "only-projects": null,
+  "only-vyvisky": "Виготовлення вивісок",
+  "only-auto": "Брендування авто",
+  "only-photozone": "Друк фотозон",
+  "only-konstrukcii": "Рекламні конструкції і таблички",
+  "only-shyrokoformat": "Широкоформатний друк",
+  "only-pictures": "Друк картин на холсті",
+  "only-vitryny": "Оформлення вітрин",
+  "only-poligrafija": "Поліграфія",
+};
+
 const SectionProjects = ({ limit }) => {
-  const [activeBtn, setActiveBtn] = useState(false);
+  const { filter } = useParams();
 
-  const handleChangeState = () => {
-    setActiveBtn(prevState => !prevState);
-  };
+  console.log(filter);
 
-  const classNameItemBtn = activeBtn
-    ? "projects-section__btn-item active"
-    : "projects-section__btn-item";
+  const wantedDescription = mapFilter[filter];
+
+  console.log("---------");
+  console.log(wantedDescription);
+  console.log("---------");
 
   const dislayedProjects = limit
     ? projects.slice(0, limit)
     : projects;
 
+  const filteredProjects =
+    wantedDescription === null
+      ? dislayedProjects
+      : dislayedProjects.filter(
+          item => item.description === wantedDescription,
+        );
+
   return (
     <>
       <section className="projects-section">
-        <ul className="projects-section__btn-list">
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Всі проекти
-            </button>
-          </li>
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Виготовлення вивісок
-            </button>
-          </li>
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Брендування авто
-            </button>
-          </li>
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Друк фотозон
-            </button>
-          </li>
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Рекламні конструкції і таблички
-            </button>
-          </li>
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Широкоформатний друк
-            </button>
-          </li>
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Друк картин на холсті
-            </button>
-          </li>
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Оформлення вітрин
-            </button>
-          </li>
-          <li
-            className={classNameItemBtn}
-            onClick={handleChangeState}
-          >
-            <button className="projects-section__btn">
-              Поліграфія
-            </button>
-          </li>
-        </ul>
         <ul className="projects-section__card-list">
-          {dislayedProjects.map(project => (
+          {filteredProjects.map(project => (
             <CardProjects
               key={project.id}
               src={project.src}
