@@ -15,7 +15,7 @@ const BurgerMenu = ({ isOpen }) => {
           <Link to={"/"} className="list__item">
             ГОЛОВНА
           </Link>
-          <Link to={"/projects:filter?"} className="list__item">
+          <Link to={"/projects"} className="list__item">
             ПРОЕКТИ
           </Link>
           <Link to={"/services"} className="list__item">
