@@ -44,7 +44,6 @@ const SectionProjectsFilter = () => {
                   {elem}
                 </button>
               </li>
-              ;
             </>
           );
         })}
