@@ -45,6 +45,14 @@ const SectionProjectsFilter = () => {
       text: "Поліграфія",
       url: "only-poligrafija",
     },
+    {
+      text: "Друк на одязі",
+      url: "only-closes",
+    },
+    {
+      text: "Сувенірна продукція",
+      url: "only-suveniry",
+    },
   ];
 
   const handleChangeState = (elem, index) => {
