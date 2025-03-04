@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./section-projects-filter.scss";
 
 const SectionProjectsFilter = () => {
-  const [activeBtn, setActiveBtn] = useState(null);
+  const [activeBtn, setActiveBtn] = useState(0);
 
   const filters = [
     "Всі проекти",
@@ -18,29 +18,27 @@ const SectionProjectsFilter = () => {
   ];
 
   const handleChangeState = index => {
-    setActiveBtn(prevState => !prevState);
+    setActiveBtn(index);
     console.log(index);
+    console.log(activeBtn);
   };
-
-  const classNameItemBtn = activeBtn
-    ? "section-projects-filter__btn-item active"
-    : "section-projects-filter__btn-item";
 
   return (
     <>
       <ul className="section-projects-filter__btn-list">
         {filters.map((elem, index) => {
+          const classNameItemBtn =
+            activeBtn === index
+              ? "section-projects-filter__btn-item active"
+              : "section-projects-filter__btn-item";
           return (
             <>
               <li
                 className={classNameItemBtn}
-                onClick={handleChangeState}
                 key={index}
+                onClick={() => handleChangeState(index)}
               >
-                <button
-                  onClick={() => handleChangeState(index)}
-                  className="section-projects-filter__btn"
-                >
+                <button className="section-projects-filter__btn">
                   {elem}
                 </button>
               </li>
