@@ -1,0 +1,26 @@
+.section-projects-filter {
+  &__btn-list {
+    display: flex;
+    margin: 25px 0;
+    flex-flow: row wrap;
+    gap: 15px 10px;
+  }
+
+  &__btn-item {
+    white-space: pre-wrap;
+    border-bottom: 2px solid $green;
+    padding: 10px 15px;
+    border-radius: 30px;
+
+    &.active {
+      white-space: pre-wrap;
+      border: 2px solid $green;
+      padding: 10px 15px;
+      border-radius: 30px;
+    }
+  }
+
+  &__btn {
+    font-size: 20px;
+  }
+}
