@@ -1,3 +1,5 @@
+import { useParams } from "react-router";
+
 import CardProjects from "../../card/card-projects/card-projects";
 
 import projects from "../../../../assets/data/projects.json";
@@ -5,6 +7,10 @@ import projects from "../../../../assets/data/projects.json";
 import "./section-projects.scss";
 
 const SectionProjects = ({ limit }) => {
+  let params = useParams();
+
+  console.log(params);
+
   const dislayedProjects = limit
     ? projects.slice(0, limit)
     : projects;
