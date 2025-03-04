@@ -64,17 +64,15 @@ const SectionProjectsFilter = () => {
               ? "section-projects-filter__btn-item active"
               : "section-projects-filter__btn-item";
           return (
-            <>
-              <li
-                className={classNameItemBtn}
-                key={index}
-                onClick={() => handleChangeState(elem, index)}
-              >
-                <button className="section-projects-filter__btn">
-                  {elem.text}
-                </button>
-              </li>
-            </>
+            <li
+              className={classNameItemBtn}
+              key={index}
+              onClick={() => handleChangeState(elem, index)}
+            >
+              <button className="section-projects-filter__btn">
+                {elem.text}
+              </button>
+            </li>
           );
         })}
       </ul>
