@@ -1,13 +1,18 @@
+import { Link } from "react-router";
+
 import { MoveRight } from "lucide-react";
 
 import "./button-read-more.scss";
+import React from "react";
 
-const ButtonReadMore = () => {
+const ButtonReadMore = ({ link }) => {
   return (
     <>
-      <span className="button-read-more">
-        Детальніше <MoveRight />
-      </span>
+      {link && (
+        <Link to={link} className="button-read-more">
+          Детальніше <MoveRight />
+        </Link>
+      )}
     </>
   );
 };

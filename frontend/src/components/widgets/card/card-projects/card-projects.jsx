@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import ButtonReadMore from "../../../UI/buttons/button-read-more/button-read-more";
 
 import "./card-projects.scss";
@@ -7,10 +8,13 @@ const CardProjects = ({ src, description }) => {
     <>
       <li className="card-projects__item">
         <img className="card-projects__item-img" src={src} alt="" />
-        <a className="card-projects__item-link" href="#">
+        <div
+          className="card-projects__item-link"
+          onClick={() => navigate("/projects")}
+        >
           <div className="description">{description}</div>
           <ButtonReadMore />
-        </a>
+        </div>
       </li>
     </>
   );
