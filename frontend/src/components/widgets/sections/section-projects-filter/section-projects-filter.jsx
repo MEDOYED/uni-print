@@ -53,6 +53,10 @@ const SectionProjectsFilter = () => {
       text: "Сувенірна продукція",
       url: "only-suveniry",
     },
+    {
+      text: "Ростові фігури",
+      url: "only-rostovi-figury",
+    },
   ];
 
   const handleChangeState = (elem, index) => {
