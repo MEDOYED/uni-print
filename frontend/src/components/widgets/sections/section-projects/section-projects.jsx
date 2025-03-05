@@ -16,6 +16,9 @@ const mapFilter = {
   "only-pictures": "Друк картин на холсті",
   "only-vitryny": "Оформлення вітрин",
   "only-poligrafija": "Поліграфія",
+  "only-closes": "Друк на одязі",
+  "only-suveniry": "Сувенірна продукція",
+  "only-rostovi-figury": "Ростові фігури",
 };
 
 const SectionProjects = ({ limit }) => {
