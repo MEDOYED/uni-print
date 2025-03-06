@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 import "./section-projects-filter.scss";

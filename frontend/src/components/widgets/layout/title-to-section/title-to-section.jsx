@@ -1,5 +1,5 @@
 import { MoveRight } from "lucide-react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 import "./title-to-section.scss";
 

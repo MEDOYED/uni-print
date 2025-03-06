@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router";
 import ButtonReadMore from "../../../UI/buttons/button-read-more/button-read-more";
 
 import "./card-projects.scss";
