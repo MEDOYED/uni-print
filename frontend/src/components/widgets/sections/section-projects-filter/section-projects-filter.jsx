@@ -73,29 +73,11 @@ const SectionProjectsFilter = () => {
   };
 
   useEffect(() => {
-    if (filter === "only-vyvisky") {
-      setActiveBtn(1);
-    } else if (filter === "only-auto") {
-      setActiveBtn(2);
-    } else if (filter === "only-photozone") {
-      setActiveBtn(3);
-    } else if (filter === "only-konstrukcii") {
-      setActiveBtn(4);
-    } else if (filter === "only-shyrokoformat") {
-      setActiveBtn(5);
-    } else if (filter === "only-pictures") {
-      setActiveBtn(6);
-    } else if (filter === "only-vitryny") {
-      setActiveBtn(7);
-    } else if (filter === "only-poligrafija") {
-      setActiveBtn(8);
-    } else if (filter === "only-closes") {
-      setActiveBtn(9);
-    } else if (filter === "only-suveniry") {
-      setActiveBtn(10);
-    } else if (filter === "only-rostovi-figury") {
-      setActiveBtn(11);
+    const index = filters.findIndex(item => item.url === filter); // шукаєм індекс елемента. filter це динамічка частина URL
+    if (filter === filters[index].url) {
+      setActiveBtn(index);
     }
+    console.log(index);
   }, [filter]);
 
   return (
