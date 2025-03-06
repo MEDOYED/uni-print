@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import BtnPhone from "../../../UI/buttons/btn-tel/btn-phone";
+import BtnPhone from "../../../UI/buttons/btn-phone/btn-phone";
 import GreenButton from "../../../UI/green-button/green-button";
 import WriteUsPopup from "../../modal-window/write-us-popup/write-us-popup";
 
