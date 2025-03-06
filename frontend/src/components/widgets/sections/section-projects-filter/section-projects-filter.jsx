@@ -74,10 +74,11 @@ const SectionProjectsFilter = () => {
 
   useEffect(() => {
     const index = filters.findIndex(item => item.url === filter); // шукаєм індекс елемента. filter це динамічка частина URL
-    if (filter === filters[index].url) {
-      setActiveBtn(index);
+    if (index != -1) {
+      if (filter === filters[index].url) {
+        setActiveBtn(index);
+      }
     }
-    console.log(index);
   }, [filter]);
 
   return (
