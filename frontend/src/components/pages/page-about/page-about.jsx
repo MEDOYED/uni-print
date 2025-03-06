@@ -50,7 +50,9 @@ const PageAbout = () => {
           />
         </div>
       </section>
-      <SectionContact />
+      <SectionContact
+        title={"Залишились питання?\nПотрібна консультація?"}
+      />
     </>
   );
 };
