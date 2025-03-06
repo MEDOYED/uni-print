@@ -12,7 +12,7 @@ const Footer = () => {
           <img src={logo} alt="logo" />
         </Link>
         <Link to={"/"} className="footer__sub-heading">
-          МАЙСТЕРНЯ РЕКЛАМИ UNI PRINT
+          ВИРОБНИЦТВО РЕКЛАМИ UNI PRINT
         </Link>
       </footer>
     </>

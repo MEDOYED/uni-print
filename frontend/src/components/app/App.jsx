@@ -1,10 +1,9 @@
 import { useEffect } from "react";
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom";
 
 import useThemeStore from "../../store/themeStore";
 
 import Header from "../widgets/layout/header/header";
-import HomePage from "../pages/home-page/home-page";
 
 import "./app.scss";
 

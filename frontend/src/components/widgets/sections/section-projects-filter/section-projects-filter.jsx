@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 import "./section-projects-filter.scss";
 
@@ -7,6 +8,9 @@ const SectionProjectsFilter = () => {
   const [activeBtn, setActiveBtn] = useState(0);
 
   let navigate = useNavigate();
+
+  const { filter } = useParams();
+  console.log("Filter: section projects filter: " + filter);
 
   const filters = [
     {
@@ -63,9 +67,18 @@ const SectionProjectsFilter = () => {
     setActiveBtn(index);
     navigate("/projects/" + elem.url);
 
-    console.log(index);
-    console.log(activeBtn);
+    console.log("index:" + index);
+    console.log("active button:" + activeBtn);
   };
+
+  useEffect(() => {
+    const index = filters.findIndex(item => item.url === filter); // шукаєм індекс елемента. filter це динамічка частина URL
+    if (index != -1) {
+      if (filter === filters[index].url) {
+        setActiveBtn(index);
+      }
+    }
+  }, [filter]);
 
   return (
     <>

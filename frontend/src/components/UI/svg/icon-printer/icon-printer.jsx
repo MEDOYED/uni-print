@@ -15,7 +15,7 @@ const IconPrinter = ({ className }) => {
         width="44"
         height="25"
         stroke="black"
-        stroke-width="2"
+        strokeWidth="2"
         // fill="none"
       />
 
@@ -25,7 +25,7 @@ const IconPrinter = ({ className }) => {
         width="28"
         height="12"
         stroke="black"
-        stroke-width="2"
+        strokeWidth="2"
         // fill="none"
       />
 
@@ -35,7 +35,7 @@ const IconPrinter = ({ className }) => {
         width="20"
         height="22"
         stroke="black"
-        stroke-width="2"
+        strokeWidth="2"
         // fill="none"
       />
 
@@ -45,7 +45,7 @@ const IconPrinter = ({ className }) => {
         x2="40"
         y2="24"
         stroke="black"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <line
         x1="24"
@@ -53,7 +53,7 @@ const IconPrinter = ({ className }) => {
         x2="40"
         y2="28"
         stroke="black"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <line
         x1="24"
@@ -61,7 +61,7 @@ const IconPrinter = ({ className }) => {
         x2="40"
         y2="32"
         stroke="black"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <line
         x1="24"
@@ -69,7 +69,7 @@ const IconPrinter = ({ className }) => {
         x2="40"
         y2="36"
         stroke="black"
-        stroke-width="2"
+        strokeWidth="2"
       />
 
       <circle cx="16" cy="22" r="2" fill="black" />

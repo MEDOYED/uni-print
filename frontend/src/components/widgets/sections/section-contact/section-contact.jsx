@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import { useState } from "react";
 
-import BtnPhone from "../../../UI/buttons/btn-tel/btn-phone";
+import BtnPhone from "../../../UI/buttons/btn-phone/btn-phone";
 import GreenButton from "../../../UI/green-button/green-button";
 import ButtonEmail from "../../../UI/buttons/button-email/button-email";
 import WriteUsPopup from "../../modal-window/write-us-popup/write-us-popup";

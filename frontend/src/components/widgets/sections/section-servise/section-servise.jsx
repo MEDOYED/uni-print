@@ -1,5 +1,3 @@
-import { ALargeSmall, icons } from "lucide-react";
-
 import CardServise from "../../card/card-servise/card-servise";
 import IconDesigner from "../../../UI/svg/icon-designer/icon-designer";
 import IconPicture from "../../../UI/svg/icon-picture/icon-picture";
