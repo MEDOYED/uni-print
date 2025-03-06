@@ -7,6 +7,7 @@ import projects from "../../../../assets/data/projects.json";
 import "./section-projects.scss";
 
 const mapFilter = {
+  undefined: null,
   "only-projects": null,
   "only-vyvisky": "Виготовлення вивісок",
   "only-auto": "Брендування авто",
@@ -24,7 +25,7 @@ const mapFilter = {
 const SectionProjects = ({ limit }) => {
   const { filter } = useParams();
 
-  console.log(filter);
+  console.log("Filter:" + filter);
 
   const wantedDescription = mapFilter[filter];
 
