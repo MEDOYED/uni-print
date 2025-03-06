@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { useParams } from "react-router";
+import { useEffect } from "react";
 
 import "./section-projects-filter.scss";
 
@@ -7,6 +9,9 @@ const SectionProjectsFilter = () => {
   const [activeBtn, setActiveBtn] = useState(0);
 
   let navigate = useNavigate();
+
+  const { filter } = useParams();
+  console.log("Filter: section projects filter: " + filter);
 
   const filters = [
     {
@@ -63,9 +68,35 @@ const SectionProjectsFilter = () => {
     setActiveBtn(index);
     navigate("/projects/" + elem.url);
 
-    console.log(index);
-    console.log(activeBtn);
+    console.log("index:" + index);
+    console.log("active button:" + activeBtn);
   };
+
+  useEffect(() => {
+    if (filter === "only-vyvisky") {
+      setActiveBtn(1);
+    } else if (filter === "only-auto") {
+      setActiveBtn(2);
+    } else if (filter === "only-photozone") {
+      setActiveBtn(3);
+    } else if (filter === "only-konstrukcii") {
+      setActiveBtn(4);
+    } else if (filter === "only-shyrokoformat") {
+      setActiveBtn(5);
+    } else if (filter === "only-pictures") {
+      setActiveBtn(6);
+    } else if (filter === "only-vitryny") {
+      setActiveBtn(7);
+    } else if (filter === "only-poligrafija") {
+      setActiveBtn(8);
+    } else if (filter === "only-closes") {
+      setActiveBtn(9);
+    } else if (filter === "only-suveniry") {
+      setActiveBtn(10);
+    } else if (filter === "only-rostovi-figury") {
+      setActiveBtn(11);
+    }
+  }, [filter]);
 
   return (
     <>
