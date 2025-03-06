@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  &__link {
+    img {
+      width: 200px;
+    }
+  }
+
+  &__sub-heading {
+    margin-bottom: 20px;
+  }
+}

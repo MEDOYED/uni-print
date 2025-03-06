@@ -6,6 +6,7 @@ import AboutUs from "../../widgets/sections/about-us-section/about-us-section";
 import SectionOurClients from "../../widgets/sections/section-our-clients/section-our-clients";
 import LineWhiteHorizontal from "../../UI/line/line-white-horizontal/line-white-horizontal";
 import SectionContact from "../../widgets/sections/section-contact/section-contact";
+import Footer from "../../widgets/layout/footer/footer";
 
 import "./home-page.scss";
 
@@ -34,6 +35,7 @@ const HomePage = () => {
           title={"Залишились питання?\nПотрібна консультація?"}
         />
         <LineWhiteHorizontal />
+        <Footer />
       </div>
     </>
   );

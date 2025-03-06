@@ -11,7 +11,9 @@ const PageProjects = () => {
       <Heading />
       <SectionProjectsFilter />
       <SectionProjects />
-      <SectionContact />
+      <SectionContact
+        title={"Залишились питання?\nПотрібна консультація?"}
+      />
     </>
   );
 };
