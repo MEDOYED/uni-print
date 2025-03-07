@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import logo from "../../../../assets/img/logo.png";
+import Logo from "../logo/logo";
 
 import "./footer.scss";
 
@@ -8,9 +8,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <Link to={"/"} className="footer__link">
-          <img src={logo} alt="logo" />
-        </Link>
+        <Logo />
         <Link to={"/"} className="footer__sub-heading">
           ВИРОБНИЦТВО РЕКЛАМИ UNI PRINT
         </Link>
