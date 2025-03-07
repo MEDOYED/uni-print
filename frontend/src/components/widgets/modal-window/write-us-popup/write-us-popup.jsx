@@ -13,41 +13,56 @@ import "./write-us-popup.scss";
 
 const WriteUsPopup = ({ isOpen, onClick }) => {
   // состояние для форми
-  const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
 
   // получение теми с Zustand
-  const theme = useThemeStore((state) => state.theme);
+  const theme = useThemeStore(state => state.theme);
   console.log(theme);
 
   // опридиление класов
-  const writeUsPopupClassName = theme === "light" ? "write-us-popup light" : "write-us-popup";
+  const writeUsPopupClassName =
+    theme === "light" ? "write-us-popup light" : "write-us-popup";
   const writeUsPopupContentClassName =
-    theme === "light" ? "write-us-popup__content light" : "write-us-popup__content";
+    theme === "light"
+      ? "write-us-popup__content light"
+      : "write-us-popup__content";
 
   // функиця для обновления сосояния форми
   const handleInputChange = (field, value) => {
-    setFormData((prevData) => ({
+    setFormData(prevData => ({
       ...prevData,
       [field]: value,
     }));
   };
 
   // отправка форми
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
     console.log("Send data:", formData);
 
     // axios post
     try {
-      const response = await axios.post("https://your-api-endpoint.com/send", formData, {
-        headers: {
-          "Content-Type": "application/json",
+      const response = await axios.post(
+        "http://localhost:3000/send-email",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
         },
-      });
+      );
 
       console.log("ПЕРЕМОГА:", response.data);
     } catch (error) {
-      console.log("Помилка:", error.response ? error.response.data : error.message);
+      console.log(
+        "Помилка:",
+        error.response ? error.response.data : error.message,
+      );
     }
   };
 
@@ -63,21 +78,21 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
           <form className="form" onSubmit={handleSubmit}>
             <InputName
               value={formData.name}
-              onChange={(value) => handleInputChange("name", value)}
+              onChange={value => handleInputChange("name", value)}
             />
             <InputPhoneNumber
               value={formData.phone.replace("+380", "")}
-              onChange={(value) => handleInputChange("phone", value)}
+              onChange={value => handleInputChange("phone", value)}
             />
 
             <InputEmail
               value={formData.email}
-              onChange={(value) => handleInputChange("email", value)}
+              onChange={value => handleInputChange("email", value)}
             />
 
             <TextArea
               value={formData.message}
-              onChange={(value) => handleInputChange("message", value)}
+              onChange={value => handleInputChange("message", value)}
             />
 
             <BtnSend text={"Надіслати"} />
