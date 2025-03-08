@@ -4,11 +4,31 @@
   height: 40px;
   border-radius: 3px;
   background-color: #2e2e2e;
-  color: #fff;
+  color: currentColor;
   font-size: 22px;
   padding: 5px 15px;
   border: 1px solid #555; /* Додаємо рамку для кращого вигляду */
   outline: none; /* Вимикаємо стандартну обводку при фокусі */
+
+  &.light {
+    background-color: $input-light;
+    color: currentColor;
+
+    &:focus {
+      background-color: $input-light; /* Залишаємо фон чорним */
+      color: currentColor;
+      border-color: #777; /* Змінюємо колір рамки при фокусі */
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-text-fill-color: currentColor !important; /* Колір тексту */
+      -webkit-box-shadow: 0 0 0px 1000px $input-light inset !important; /* Колір фону */
+      transition: background-color 5000s ease-in-out 0s; /* Вимкнення анімації зміни фону */
+    }
+  }
 }
 
 /* Стилі для стану фокусу */
