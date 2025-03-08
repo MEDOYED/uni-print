@@ -152,8 +152,8 @@
   },
   {
     "id": 31,
-    "src": "/assets/img/projects/reklam-konstruk/",
-    "description": "Рекламні конструкції і таблички"
+    "src": "/assets/img/projects/vyvisky/10.jpg",
+    "description": "Виготовлення вивісок"
   },
   {
     "id": 32,
@@ -417,7 +417,12 @@
   },
   {
     "id": 84,
-    "src": "/assets/img/projects/print-on-clothes/1.jpg",
+    "src": "/assets/img/projects/suveniry/1.jpg",
+    "description": "Сувенірна продукція"
+  },
+  {
+    "id": 84,
+    "src": "/assets/img/projects/suveniry/2.jpg",
     "description": "Сувенірна продукція"
   }
 ]
