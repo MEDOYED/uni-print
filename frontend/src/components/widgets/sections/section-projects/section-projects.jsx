@@ -53,6 +53,7 @@ const SectionProjects = ({ limit }) => {
               key={project.id}
               src={project.src}
               description={project.description}
+              link={limit ? "/projects" : ""}
             />
           ))}
         </ul>

@@ -4,7 +4,7 @@ import ButtonReadMore from "../../../UI/buttons/button-read-more/button-read-mor
 
 import "./card-projects.scss";
 
-const CardProjects = ({ src, description }) => {
+const CardProjects = ({ src, description, link }) => {
   const navigate = useNavigate();
   return (
     <>
@@ -12,10 +12,10 @@ const CardProjects = ({ src, description }) => {
         <img className="card-projects__item-img" src={src} alt="" />
         <div
           className="card-projects__item-link"
-          onClick={() => navigate("/projects")}
+          onClick={() => navigate(link)}
         >
           <div className="description">{description}</div>
-          <ButtonReadMore link="/projects" />
+          <ButtonReadMore link={link} />
         </div>
       </li>
     </>
