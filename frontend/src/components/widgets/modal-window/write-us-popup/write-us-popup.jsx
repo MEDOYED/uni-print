@@ -6,6 +6,7 @@ import axios from "axios";
 import InputName from "../../../UI/input-name/input-name";
 import InputPhoneNumber from "../../../UI/input-phone-number/input-phone-number";
 import InputEmail from "../../../UI/input-email/input-email";
+import Input from "../../../UI/inputs/input/input";
 import TextArea from "../../../UI/text-area/text-area";
 import BtnSend from "../../../UI/btn-send/btn-send";
 
@@ -76,19 +77,33 @@ const WriteUsPopup = ({ isOpen, onClick }) => {
             <X />
           </button>
           <form className="form" onSubmit={handleSubmit}>
-            <InputName
+            {/* <InputName
               value={formData.name}
               onChange={value => handleInputChange("name", value)}
+            /> */}
+            <Input
+              value={formData.name}
+              onChange={value => handleInputChange("name", value)}
+              type="text"
+              name="name"
+              placeholder="Ваше ім'я"
             />
             <InputPhoneNumber
               value={formData.phone.replace("+380", "")}
               onChange={value => handleInputChange("phone", value)}
             />
 
-            <InputEmail
+            <Input
               value={formData.email}
               onChange={value => handleInputChange("email", value)}
+              type="email"
+              name="email"
+              placeholder="E-mail"
             />
+            {/* <InputEmail
+              value={formData.email}
+              onChange={value => handleInputChange("email", value)}
+            /> */}
 
             <TextArea
               value={formData.message}
