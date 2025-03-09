@@ -1,7 +1,7 @@
 import "./input-phone-number.scss";
 
 const InputPhoneNumber = ({ value, onChange }) => {
-  const handleChange = (e) => {
+  const handleChange = e => {
     // Удаляем все нецифровие символи
     let inputValue = e.target.value.replace(/\D/g, "").slice(0, 9);
 
