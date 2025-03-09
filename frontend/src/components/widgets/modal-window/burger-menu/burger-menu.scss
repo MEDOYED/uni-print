@@ -36,7 +36,7 @@
   &--open {
     position: fixed;
     top: 0;
-    left: 250px;
+    left: max(100px, calc((100vw - 1600px) / 2 + 100px));
     width: 300px;
     height: 100vh;
     transition: left 0.3s ease-in-out;
