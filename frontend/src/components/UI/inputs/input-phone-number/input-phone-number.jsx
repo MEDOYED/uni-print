@@ -1,3 +1,5 @@
+import useThemeStore from "../../../../store/themeStore";
+
 import "./input-phone-number.scss";
 
 const InputPhoneNumber = ({ value, onChange }) => {
@@ -16,10 +18,18 @@ const InputPhoneNumber = ({ value, onChange }) => {
     onChange(inputValue);
   };
 
+  // Получаем состояние теми сайта
+  const theme = useThemeStore(state => state.theme);
+
+  const className =
+    theme === "light"
+      ? "input-phone-number light"
+      : "input-phone-number";
+
   return (
     <div className="input-p-n">
       <input
-        className="input-phone-number"
+        className={className}
         type="tel"
         id="phone"
         name="phone"

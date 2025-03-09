@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 
 import Input from "../../../UI/inputs/input/input";
-import InputPhoneNumber from "../../../UI/input-phone-number/input-phone-number";
+import InputPhoneNumber from "../../../UI/inputs/input-phone-number/input-phone-number";
 import TextArea from "../../../UI/text-area/text-area";
 import BtnSend from "../../../UI/btn-send/btn-send";
 

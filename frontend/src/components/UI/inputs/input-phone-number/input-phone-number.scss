@@ -7,7 +7,8 @@
     height: 40px;
     border-radius: 3px;
     background-color: #2e2e2e;
-    color: #fff;
+    // color: #fff;
+    color: currentColor;
     font-size: 22px;
     padding: 5px 15px 5px 65px;
     border: 1px solid #555; /* Додаємо рамку для кращого вигляду */
@@ -17,7 +18,8 @@
     /* Стилі для стану фокусу */
     &:focus {
       background-color: #2e2e2e; /* Залишаємо фон чорним */
-      color: #fff; /* Залишаємо текст білим */
+      // color: #fff; /* Залишаємо текст білим */
+      color: currentColor; /* Залишаємо текст білим */
       border-color: #777; /* Змінюємо колір рамки при фокусі */
     }
 
@@ -26,9 +28,20 @@
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
     &:-webkit-autofill:active {
-      -webkit-text-fill-color: #fff !important; /* Колір тексту */
+      -webkit-text-fill-color: currentColor !important; /* Колір тексту */
       -webkit-box-shadow: 0 0 0px 1000px #2e2e2e inset !important; /* Колір фону */
-      transition: background-color 5000s ease-in-out 0s; /* Вимкнення анімації зміни фону */
+    }
+
+    &.light {
+      background-color: $input-light;
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-text-fill-color: currentColor !important; /* Колір тексту */
+        -webkit-box-shadow: 0 0 0px 1000px $input-light inset !important; /* Колір фону */
+      }
     }
   }
 
