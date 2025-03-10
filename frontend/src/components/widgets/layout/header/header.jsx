@@ -31,6 +31,7 @@ const Header = () => {
           onClick={toggleBurger}
         >
           <svg
+            className="header__burger-svg"
             width="35"
             height="35"
             viewBox="0 0 24 24"
@@ -39,7 +40,6 @@ const Header = () => {
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="header__burger-svg"
           >
             <line className="top" x1="4" x2="20" y1="6" y2="6" />
             <line className="middle" x1="4" x2="20" y1="12" y2="12" />
