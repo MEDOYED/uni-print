@@ -17,7 +17,9 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <Logo />
+        <div className="header__logo">
+          <Logo />
+        </div>
 
         <ToggleTheme />
 

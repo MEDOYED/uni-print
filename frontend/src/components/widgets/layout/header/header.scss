@@ -7,6 +7,10 @@
   top: 0;
   left: 0;
 
+  &__logo {
+    margin: 20px 0 40px 0;
+  }
+
   &__burger {
     display: flex;
     flex-direction: column;
