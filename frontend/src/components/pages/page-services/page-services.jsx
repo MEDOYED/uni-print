@@ -1,6 +1,7 @@
 import Heading from "../../widgets/layout/heading/heading";
 import SectionServiseDesc from "../../widgets/sections/section-servise-desc/section-servise-desc";
 import SectionContact from "../../widgets/sections/section-contact/section-contact";
+import Footer from "../../widgets/layout/footer/footer";
 
 import IconAdStructure from "../../UI/svg/icon-ad-structure/icon-ad-structure";
 import IconCar from "../../UI/svg/icon-car/icon-car";
@@ -87,6 +88,7 @@ const PageServices = () => {
       <SectionContact
         title={"Залишились питання? \n Потрібна консультація?"}
       />
+      <Footer />
     </>
   );
 };
