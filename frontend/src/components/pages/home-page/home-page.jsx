@@ -34,7 +34,6 @@ const HomePage = () => {
         <SectionContact
           title={"Залишились питання?\nПотрібна консультація?"}
         />
-        <LineWhiteHorizontal />
         <Footer />
       </div>
     </>
