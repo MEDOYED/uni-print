@@ -1,6 +1,7 @@
 .logo {
-  img {
-    margin-bottom: 40px;
-    width: 100px;
+  margin-bottom: 40px;
+  svg {
+    max-width: 100px;
+    max-height: max-content;
   }
 }

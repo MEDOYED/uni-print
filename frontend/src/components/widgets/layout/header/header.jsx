@@ -1,12 +1,9 @@
 import { Instagram } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import ToggleTheme from "../../../UI/togle-theme/toggle-theme";
 import BurgerMenu from "../../modal-window/burger-menu/burger-menu";
 import Logo from "../logo/logo";
-
-import logoIcon from "../../../../assets/img/logo.png";
 
 import "./header.scss";
 
