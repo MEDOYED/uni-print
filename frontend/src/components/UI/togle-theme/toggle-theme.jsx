@@ -1,7 +1,7 @@
 import useThemeStore from "../../../store/themeStore";
 import { Sun, Moon } from "lucide-react";
 
-import "./toggle-theme.css";
+import "./toggle-theme.scss";
 
 const ToggleTheme = () => {
   const { theme, toggleTheme } = useThemeStore();
@@ -9,11 +9,16 @@ const ToggleTheme = () => {
   return (
     <>
       <button
-        className="header__theme-toggle"
+        className="icon-toggle-theme"
         onClick={toggleTheme}
         type="button"
-        aria-label="Переключення теми">
-        {theme === "light" ? <Moon size={30} /> : <Sun size={30} />}
+        aria-label="Переключення теми"
+      >
+        {theme === "light" ? (
+          <Moon className="icon-toggle-theme__icon" size={30} />
+        ) : (
+          <Sun className="icon-toggle-theme__icon" size={30} />
+        )}
       </button>
     </>
   );
