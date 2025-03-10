@@ -4,4 +4,8 @@
   background-color: #fff;
   margin: 20px 0;
   border-radius: 5px;
+
+  &.dark {
+    background-color: #000000;
+  }
 }
