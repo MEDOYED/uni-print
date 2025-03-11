@@ -20,7 +20,7 @@
   position: absolute;
   top: 0;
   left: -100%;
-  width: 300px;
+  width: 200px;
   height: 100vh;
   transition: left 0.3s ease-in-out;
   z-index: 10;
@@ -36,8 +36,8 @@
   &--open {
     position: fixed;
     top: 0;
-    left: max(100px, calc((100vw - 1600px) / 2 + 100px));
-    width: 300px;
+    left: max(120px, calc((100vw - 1600px) / 2 + 120px));
+    width: 200px;
     height: 100vh;
     transition: left 0.3s ease-in-out;
     display: flex;
