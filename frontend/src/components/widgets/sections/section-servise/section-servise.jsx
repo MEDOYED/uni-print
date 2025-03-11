@@ -1,3 +1,5 @@
+import { Sticker, Shirt } from "lucide-react";
+
 import CardServise from "../../card/card-servise/card-servise";
 import IconDesigner from "../../../UI/svg/icon-designer/icon-designer";
 import IconPicture from "../../../UI/svg/icon-picture/icon-picture";
@@ -36,8 +38,10 @@ const SectionServise = () => {
           text="Рекламні конструкції"
           Icon={IconAdStructure}
         />
-        <CardServise text="Послуги дизайнера" Icon={IconDesigner} />
+        <CardServise text="Виготовлення наліпок" Icon={Sticker} />
+        <CardServise text="Друк на одязі" Icon={Shirt} />
         <CardServise text="Ростові фігури" Icon={IconGrowthFigure} />
+        <CardServise text="Послуги дизайнера" Icon={IconDesigner} />
       </ul>
     </>
   );
