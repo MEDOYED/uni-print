@@ -187,7 +187,7 @@
   },
   {
     "id": 38,
-    "src": "/assets/img/projects/poligrafija/",
+    "src": "/assets/img/projects/poligrafija/20.jpg",
     "description": "Поліграфія"
   },
   {
@@ -327,12 +327,12 @@
   },
   {
     "id": 66,
-    "src": "/assets/img/projects/reklam-konstruk/",
+    "src": "/assets/img/projects/reklam-konstruk/15.jpg",
     "description": "Рекламні конструкції і таблички"
   },
   {
     "id": 67,
-    "src": "/assets/img/projects/reklam-konstruk/",
+    "src": "/assets/img/projects/reklam-konstruk/16.jpg",
     "description": "Рекламні конструкції і таблички"
   },
   {
@@ -347,8 +347,8 @@
   },
   {
     "id": 70,
-    "src": "/assets/img/projects/poligrafija/20.jpg",
-    "description": "Поліграфія"
+    "src": "/assets/img/projects/reklam-konstruk/17.jpg",
+    "description": "Рекламні конструкції і таблички"
   },
   {
     "id": 71,
@@ -469,5 +469,60 @@
     "id": 94,
     "src": "/assets/img/projects/vyvisky/18.jpg",
     "description": "Виготовлення вивісок"
+  },
+  {
+    "id": 95,
+    "src": "/assets/img/projects/auto/4.jpg",
+    "description": "Брендування авто"
+  },
+  {
+    "id": 96,
+    "src": "/assets/img/projects/rostovi-figury/10.jpg",
+    "description": "Ростові фігури"
+  },
+  {
+    "id": 97,
+    "src": "/assets/img/projects/auto/5.jpg",
+    "description": "Брендування авто"
+  },
+  {
+    "id": 98,
+    "src": "/assets/img/projects/vitryny/5.jpg",
+    "description": "Оформлення вітрин"
+  },
+  {
+    "id": 99,
+    "src": "/assets/img/projects/auto/6.jpg",
+    "description": "Брендування авто"
+  },
+  {
+    "id": 100,
+    "src": "/assets/img/projects/vitryny/6.jpg",
+    "description": "Оформлення вітрин"
+  },
+  {
+    "id": 101,
+    "src": "/assets/img/projects/rostovi-figury/11.jpg",
+    "description": "Ростові фігури"
+  },
+  {
+    "id": 102,
+    "src": "/assets/img/projects/suveniry/3.jpg",
+    "description": "Сувенірна продукція"
+  },
+  {
+    "id": 103,
+    "src": "/assets/img/projects/shyrokoformat/13.jpg",
+    "description": "Широкоформатний друк"
+  },
+  {
+    "id": 104,
+    "src": "/assets/img/projects/rostovi-figury/12.jpg",
+    "description": "Ростові фігури"
+  },
+  {
+    "id": 105,
+    "src": "/assets/img/projects/auto/7.jpg",
+    "description": "Брендування авто"
   }
 ]

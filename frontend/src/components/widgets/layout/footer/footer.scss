@@ -4,6 +4,11 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 650px) {
+    margin-bottom: 100px;
+    white-space: nowrap;
+  }
+
   &__sub-heading {
     margin-bottom: 20px;
   }

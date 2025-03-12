@@ -2,7 +2,26 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
   padding-top: 15px;
   font-size: 20px;
+
+  @media (max-width: 650px) {
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 15px;
+      gap: 10px;
+    }
+  }
 }
