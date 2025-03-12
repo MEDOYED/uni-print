@@ -24,7 +24,7 @@ const IconViber = () => {
             height="28.80"
             rx="14.4"
             fill="#a57eec"
-            strokewidth="0"
+            strokeWidth="0"
           />
         </g>
 
