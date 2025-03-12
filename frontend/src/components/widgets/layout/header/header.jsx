@@ -8,9 +8,11 @@ import IconViber from "../../../UI/svg/icon-viber/icon-viber";
 
 import "./header.scss";
 
+const vwOnFirstRender = window.visualViewport.width;
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [viewportWidth, setViewportWidth] = useState();
+  const [viewportWidth, setViewportWidth] = useState(vwOnFirstRender);
 
   const toggleBurger = () => {
     setIsOpen(isOpen => (isOpen === false ? true : false));
