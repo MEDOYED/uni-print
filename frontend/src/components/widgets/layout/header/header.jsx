@@ -65,14 +65,7 @@ const Header = () => {
         </button>
 
         <div className="header__icons">
-          {viewportWidth > 650 && (
-            <a
-              href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
-              target="_blank"
-            >
-              <IconViber />
-            </a>
-          )}
+          {viewportWidth > 650 && <IconViber />}
 
           <a
             href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"

@@ -31,14 +31,7 @@ const Heading = () => {
   return (
     <>
       <div className="heading">
-        {viewportWidth < 651 && (
-          <a
-            href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
-            target="_blank"
-          >
-            <IconViber />
-          </a>
-        )}
+        {viewportWidth < 651 && <IconViber />}
         <div className="heading__content">
           <BtnPhone margin="0 20px 0 0" />
           <GreenButton onClick={openWindow} text={"Написати нам"} />
