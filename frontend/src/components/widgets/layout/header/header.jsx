@@ -1,5 +1,5 @@
 import { Instagram } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import ToggleTheme from "../../../UI/togle-theme/toggle-theme";
 import BurgerMenu from "../../modal-window/burger-menu/burger-menu";
@@ -10,11 +10,25 @@ import "./header.scss";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [viewportWidth, setViewportWidth] = useState();
 
   const toggleBurger = () => {
     setIsOpen(isOpen => (isOpen === false ? true : false));
     // setIsOpen((prev) => !prev);  // more correct
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.visualViewport.width);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <header className="header">
@@ -48,12 +62,14 @@ const Header = () => {
           </svg>
         </button>
 
-        <a
-          href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
-          target="_blank"
-        >
-          <IconViber />
-        </a>
+        {viewportWidth > 650 && (
+          <a
+            href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
+            target="_blank"
+          >
+            <IconViber />
+          </a>
+        )}
 
         <a
           href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
