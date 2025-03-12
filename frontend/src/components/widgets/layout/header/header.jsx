@@ -4,6 +4,7 @@ import { useState } from "react";
 import ToggleTheme from "../../../UI/togle-theme/toggle-theme";
 import BurgerMenu from "../../modal-window/burger-menu/burger-menu";
 import Logo from "../logo/logo";
+import IconViber from "../../../UI/svg/icon-viber/icon-viber";
 
 import "./header.scss";
 
@@ -46,6 +47,13 @@ const Header = () => {
             <line className="bottom" x1="4" x2="20" y1="18" y2="18" />
           </svg>
         </button>
+
+        <a
+          href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
+          target="_blank"
+        >
+          <IconViber />
+        </a>
 
         <a
           href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"

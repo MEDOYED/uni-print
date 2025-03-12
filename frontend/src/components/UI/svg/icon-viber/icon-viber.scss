@@ -1,0 +1,17 @@
+.icon-viber {
+  margin-bottom: 20px;
+  &:hover {
+    .icon-viber__background {
+      scale: 1;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+  }
+
+  .icon-viber__background {
+    scale: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: scale 0.2s ease;
+  }
+}
