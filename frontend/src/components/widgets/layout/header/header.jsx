@@ -64,21 +64,23 @@ const Header = () => {
           </svg>
         </button>
 
-        {viewportWidth > 650 && (
+        <div className="header__icons">
+          {viewportWidth > 650 && (
+            <a
+              href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
+              target="_blank"
+            >
+              <IconViber />
+            </a>
+          )}
+
           <a
             href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
             target="_blank"
           >
-            <IconViber />
+            <Instagram className="instagram-icon" />
           </a>
-        )}
-
-        <a
-          href="https://www.instagram.com/uniprint_lviv?igsh=amRlMGp5NjB5b3Vl"
-          target="_blank"
-        >
-          <Instagram className="header__instagram-icon" />
-        </a>
+        </div>
 
         <BurgerMenu isOpen={isOpen} />
       </header>

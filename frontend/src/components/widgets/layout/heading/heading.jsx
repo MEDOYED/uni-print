@@ -39,8 +39,10 @@ const Heading = () => {
             <IconViber />
           </a>
         )}
-        <BtnPhone />
-        <GreenButton onClick={openWindow} text={"Написати нам"} />
+        <div className="heading__content">
+          <BtnPhone margin="0 20px 0 0" />
+          <GreenButton onClick={openWindow} text={"Написати нам"} />
+        </div>
         <WriteUsPopup isOpen={isOpen} onClick={closePopup} />
       </div>
     </>

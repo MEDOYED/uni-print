@@ -10,4 +10,8 @@
   &:hover {
     background-color: $dark-green;
   }
+
+  @media (max-width: 400px) {
+    font-size: inherit;
+  }
 }

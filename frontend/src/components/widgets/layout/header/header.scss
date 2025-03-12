@@ -62,38 +62,46 @@
     }
   }
 
-  &__instagram-icon {
+  &__icons {
     display: flex;
+    flex-direction: column;
+    gap: 25px;
 
-    transform: translateY(-25%);
-    scale: 1.3;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    width: 30px;
-    height: 30px;
+      .instagram-icon {
+        transform: translateY(-25%);
+        scale: 1.3;
 
-    border-radius: 8px;
-    align-items: center;
-    justify-content: center;
+        width: 30px;
+        height: 30px;
 
-    --s: 30px;
-    --b: 4px;
-    /* the border thickness*/
-    --g: 4px;
-    /* the gap */
-    --c: #727272;
-    /* the color */
+        border-radius: 8px;
 
-    width: var(--s);
-    aspect-ratio: 1;
-    outline: calc(var(--s) / 2) solid rgba(255, 255, 255, 0);
-    outline-offset: calc(var(--s) / -2);
-    overflow: hidden;
-    cursor: pointer;
-    transition: outline 0.3s ease, outline-offset 0.3s ease;
+        --s: 30px;
+        --b: 4px;
+        /* the border thickness*/
+        --g: 4px;
+        /* the gap */
+        --c: #727272;
+        /* the color */
 
-    &:hover {
-      outline: var(--b) solid var(--c);
-      outline-offset: var(--g);
+        width: var(--s);
+        aspect-ratio: 1;
+        outline: calc(var(--s) / 2) solid rgba(255, 255, 255, 0);
+        outline-offset: calc(var(--s) / -2);
+        overflow: hidden;
+        cursor: pointer;
+        transition: outline 0.3s ease, outline-offset 0.3s ease;
+
+        &:hover {
+          outline: var(--b) solid var(--c);
+          outline-offset: var(--g);
+        }
+      }
     }
   }
 }
