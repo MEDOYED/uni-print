@@ -7,9 +7,13 @@ import "./page-contacts.scss";
 const PageContacts = () => {
   return (
     <>
-      <SectionContact title="Наші контакти" address />
-      <SectionMap />
-      <Footer />
+      <div className="page-contacts">
+        <SectionContact title="Наші контакти" address />
+        <div className="page-contacts__map">
+          <SectionMap />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };
