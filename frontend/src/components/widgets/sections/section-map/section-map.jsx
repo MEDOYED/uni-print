@@ -4,7 +4,10 @@ import {
   TileLayer,
   Marker,
   Popup,
+  useMap,
 } from "react-leaflet";
+
+import CustomZoomControl from "./CustomZoomControl";
 
 import "./section-map.scss";
 
@@ -31,6 +34,7 @@ const SectionMap = () => {
           center={[latitude, longitude]}
           zoom={zoom}
           style={{ height: "400px", width: "100%" }}
+          scrollWheelZoom={false}
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -42,6 +46,8 @@ const SectionMap = () => {
             {/* className="leaflet-popup-content-wrapper" */}
             <Popup>вулиця Жовківська, 28</Popup>
           </Marker>
+
+          <CustomZoomControl />
         </MapContainer>
       </section>
     </>
