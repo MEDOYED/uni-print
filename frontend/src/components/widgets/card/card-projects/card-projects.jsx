@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import ButtonReadMore from "../../../UI/buttons/button-read-more/button-read-more";
+import ButtonDetails from "../../../UI/buttons/button-details/button-details";
 
 import "./card-projects.scss";
 
@@ -15,7 +15,7 @@ const CardProjects = ({ src, description, link }) => {
           onClick={() => navigate(link)}
         >
           <div className="description">{description}</div>
-          <ButtonReadMore link={link} />
+          <ButtonDetails link={link} />
         </div>
       </li>
     </>

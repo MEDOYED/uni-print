@@ -4,8 +4,23 @@ import { useEffect } from "react";
 
 import "./section-projects-filter.scss";
 
+const vwOnFirstRender = window.visualViewport.width;
+
 const SectionProjectsFilter = () => {
   const [activeBtn, setActiveBtn] = useState(0);
+  const [viewportWidth, setViewportWidth] = useState(vwOnFirstRender);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.visualViewport.width);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   let navigate = useNavigate();
 
@@ -80,6 +95,27 @@ const SectionProjectsFilter = () => {
     }
   }, [filter]);
 
+  // коли екран менше 360px, то слово обрізається і додається "..."
+  const textButton = elem => {
+    const text = elem.text;
+    const slicedText = text.slice(0, 20);
+    const readyText =
+      text.length < 21 ? slicedText : slicedText + "...";
+    if (viewportWidth < 360) {
+      return (
+        <button className="section-projects-filter__btn">
+          {readyText}
+        </button>
+      );
+    } else {
+      return (
+        <button className="section-projects-filter__btn">
+          {text}
+        </button>
+      );
+    }
+  };
+
   return (
     <>
       <ul className="section-projects-filter__btn-list">
@@ -94,9 +130,7 @@ const SectionProjectsFilter = () => {
               key={index}
               onClick={() => handleChangeState(elem, index)}
             >
-              <button className="section-projects-filter__btn">
-                {elem.text}
-              </button>
+              {textButton(elem)}
             </li>
           );
         })}
