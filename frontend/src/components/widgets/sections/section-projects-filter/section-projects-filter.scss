@@ -7,24 +7,32 @@
   }
 
   &__btn-item {
+    display: flex;
+    align-items: center;
     white-space: pre-wrap;
-    // border-top: 0.5px solid $green;
     border-left: 2px solid $green;
     border-right: 2px solid $green;
-    // border-bottom: 0.5px solid $green;
-    padding: 10px 15px;
+    padding: 11px 15px;
     border-radius: 30px;
-    height: 45px;
+    height: 42px;
 
     &.active {
       white-space: pre-wrap;
       border: 2px solid $green;
-      padding: 10px 15px;
       border-radius: 30px;
+    }
+
+    @media (max-width: 830px) {
+      padding: 9px 10px;
     }
   }
 
   &__btn {
     font-size: 20px;
+    white-space: nowrap;
+
+    @media (max-width: 830px) {
+      font-size: 17px;
+    }
   }
 }

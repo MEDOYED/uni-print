@@ -3,10 +3,18 @@
   padding: 0 15px;
   max-width: 1600px;
   display: flex;
+
+  @media (max-width: 550px) {
+    padding: 0 10px;
+  }
 }
 
 .page-wrapper {
   flex: 1;
   min-width: 0;
   margin: 0 20px;
+
+  @media (max-width: 550px) {
+    margin: 0 10px;
+  }
 }
