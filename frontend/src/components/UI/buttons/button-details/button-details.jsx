@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 import { MoveRight } from "lucide-react";
 
-import "./button-read-more.scss";
+import "./button-details.scss";
 import React from "react";
 
-const ButtonReadMore = ({ link }) => {
+const ButtonDetails = ({ link }) => {
   return (
     <>
       {link && (
@@ -17,4 +17,4 @@ const ButtonReadMore = ({ link }) => {
   );
 };
 
-export default ButtonReadMore;
+export default ButtonDetails;
