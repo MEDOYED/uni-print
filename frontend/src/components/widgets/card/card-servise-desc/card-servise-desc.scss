@@ -13,6 +13,7 @@
     -webkit-box-orient: vertical; /* Орієнтуємо "блоки" вертикально */
 
     -webkit-line-clamp: 4; /* Вказуємо, що має бути максимум 4 рядки */
+
     line-clamp: 4; // непотрібний стиль, який робить так щоб не було помилки у попередньому рядку
 
     overflow: hidden; /* Ховаємо текст, який не вміщується */
@@ -20,5 +21,10 @@
 
     font-size: 18px;
     line-height: 1.2;
+
+    &--active {
+      -webkit-line-clamp: inherit; /* Вказуємо, що має бути максимум 4 рядки */
+      line-clamp: inherit;
+    }
   }
 }
