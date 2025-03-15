@@ -6,6 +6,10 @@
   &__heading {
     margin-bottom: 35px;
     font-size: calc(23px + 13 * (100vw - 320px) / 1600);
+
+    @media (max-width: 770px) {
+      margin-bottom: 25px;
+    }
   }
 
   &__text {
@@ -25,6 +29,11 @@
     &--active {
       -webkit-line-clamp: inherit; /* Вказуємо, що має бути максимум 4 рядки */
       line-clamp: inherit;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 350px) {
+      margin-bottom: 30px;
     }
   }
 }

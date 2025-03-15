@@ -5,4 +5,8 @@
   left: 20px;
   bottom: 15px;
   gap: 9px;
+
+  @media (max-width: 350px) {
+    bottom: 44px;
+  }
 }
